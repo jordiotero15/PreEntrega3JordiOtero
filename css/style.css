@@ -50,8 +50,8 @@ header {
 }
 
 .navbar {
-    height: 25vh;
-    background-color: black;
+    padding: 0;
+   
 }
 
 .containerEncabezado {
