@@ -1,0 +1,205 @@
+/* *************************************************************************************************** */
+/* CONTACTO HTML */
+
+.areaContacto {
+    min-height: 1300px;
+}
+
+/* Section "Sobre Nosotros" */
+
+.sectionNosotros {
+    background-image: url(../img/imagenPruebaContacto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 70%;
+    height: 400px;
+    @include flex-row-center;
+    border-bottom: 1px solid black;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(204, 194, 194);
+        opacity: 80%;
+        height: 90%;
+        width: 96%;
+        padding: 50px;
+    }
+
+    h2 {
+        font-style: italic;
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+    p {
+        padding-bottom: 2%;
+        font-style: italic;
+        text-align: justify;
+        font-weight: bold;
+    }
+}
+
+/* Section "Atención al Cliente" */
+
+.sectionAtencionCliente {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.atencionCliente {
+    text-align: center;
+
+    h3 {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+
+    p {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        border: 4px solid black;
+        border-radius: 120px;
+    }
+}
+
+/* Unete a nosotros */
+
+.uneteNosotros {
+    text-align: center;
+    margin-left: 5%;
+
+    img {
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        border: 4px solid black;
+        border-radius: 100px;
+    }
+
+    h3 {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+
+    p {
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+/* ---- */
+
+/* Section "Comentarios" */
+
+.sectionComentarios {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 350px;
+}
+
+.mensajeComentarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: url(../img/sectionComentarios.png);
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+    border: 4px solid black;
+}
+
+.dos {
+    background-image: none;
+    background-color: #ffffff;
+    opacity: 80%;
+    border: none;
+    height: 90%;
+    width: 98%;
+    margin-left: 4px;
+    text-align: justify;
+
+    h3 {
+        text-transform: uppercase;
+        margin-bottom: 80px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+/* Formulario de Comentarios */
+
+.containerFormularioComentarios {
+    display: grid;
+    row-gap: 10px;
+}
+
+.btnContacto {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+        border: none;
+        margin-right: 30px;
+    }
+
+    input {
+        background-color: black;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        width: 80px;
+        height: 40px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #383434;
+        }
+    }
+}
+
+/* ---- */
+/* Section "Dónde estamos? */
+
+.contactoUbicacion {
+    margin-top: 3%;
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "titulo img"
+            "gps gps";
+        row-gap: 20px;
+    }
+
+    h3 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: titulo;
+        font-size: 2rem;
+    }
+
+    img {
+        grid-area: img;
+        width: 100px;
+    }
+
+    iframe {
+        grid-area: gps;
+        width: 99%;
+    }
+}

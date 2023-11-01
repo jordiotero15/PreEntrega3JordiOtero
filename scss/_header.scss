@@ -1,0 +1,158 @@
+/* ------------------------- HEADER ---------------------------------------*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.navbar {
+    padding: 0;
+    flex-direction: column;
+}
+
+.containerRedes {
+    height: 50px;
+    ul {
+        margin-top: 12px;
+
+        p {
+            height: 16px;
+            margin-top: 8px;
+            margin-right: 8px;
+        }
+    }
+}
+
+.containerEncabezado {
+    // background-image: url(../img/categoriaBizcochos.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // background-position-y: 0%;
+    background-color: $color-fondo;
+    border-bottom: 1px solid rgb(192, 189, 189);
+}
+
+/* LOGO "PANADERIA PARIS"*/
+
+.logo {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    transition: all 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+/*  */
+/* MENU PRINCIPAL */
+/* ACTIVE */
+
+.active a {
+    @include anclas;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    background-color: $color-bg-header-a;
+    opacity: 84%;
+    text-shadow: none;
+}
+
+.menuNavegacion li {
+    font-size: 1.2rem;
+    transition: all 0.5s;
+    text-shadow: $text-shadow;
+
+    a {
+        @include flex-row-center;
+        transition: all 0.4s;
+        height: 50px;
+
+        &:hover {
+            background-color: $color-bg-header-a-hover;
+            opacity: 84%;
+        }
+    }
+}
+
+/* MENU DESPLEGABLE */
+
+/* SEPARADOR DE "MI CUENTA" */
+
+.separadorHeader {
+    text-shadow: none !important;
+
+    span {
+        color: rgb(139, 138, 138);
+    }
+}
+
+.desplegable {
+    text-align: center;
+    width: 280px;
+}
+
+.ingresar {
+    background-color: $color-bg-header-a;
+    color: white;
+    border-radius: 8px;
+    width: 90%;
+    margin-left: 5%;
+    transition: all 0.4s;
+
+    &:hover {
+        background-color: $color-bg-header-a-hover;
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* CONTAINER GOOGLE */
+
+.containerGoogle {
+    @include flex-row-center;
+
+    a {
+        @include flex-row-center;
+        width: 90%;
+        height: 32px;
+        padding: 10px;
+        font-size: 1rem;
+        background-color: white;
+        border: 1px solid rgba(34, 34, 34, 0.178);
+        border-radius: 8px;
+        color: rgb(0, 0, 0);
+        transition: all 0.7s;
+        text-shadow: none;
+
+        &:hover {
+            background-color: rgb(221, 241, 248) !important;
+            border: 2px solid rgb(188, 227, 240);
+            text-shadow: none;
+        }
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+}
+
+/* BARRA DE BUSQUEDA */
+
+.btnBuscar {
+    position: relative;
+    right: 5px;
+    background-color: $color-bg-header-a;
+    width: 30px;
+    border-radius: 0 50px 50px 0;
+    padding: 10px 8px;
+    border: none;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: rgb(164, 111, 27);
+    }
+}

@@ -1,0 +1,17 @@
+//MIXIN
+
+//MIXIN ANCLAS DEL ACTIVE
+@mixin anclas {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+//MIXIN FLEX - ROW - CENTER
+
+@mixin flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
