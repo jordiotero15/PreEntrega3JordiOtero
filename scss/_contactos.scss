@@ -8,13 +8,13 @@
 /* Section "Sobre Nosotros" */
 
 .sectionNosotros {
+    @include flex-row-center;
     background-image: url(../img/imagenPruebaContacto.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 70%;
     height: 400px;
-    @include flex-row-center;
     border-bottom: 1px solid black;
 
     div {

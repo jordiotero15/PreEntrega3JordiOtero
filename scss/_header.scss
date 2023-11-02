@@ -10,7 +10,7 @@ header {
     padding: 0;
     flex-direction: column;
 }
-
+//SECTION DE "REDES"
 .containerRedes {
     height: 50px;
     ul {
@@ -55,7 +55,7 @@ header {
     @include anclas;
     color: rgb(0, 0, 0);
     font-size: 1.3rem;
-    background-color: $color-bg-header-a;
+    // background-color: $color-bg-header-a;
     opacity: 84%;
     text-shadow: none;
 }
