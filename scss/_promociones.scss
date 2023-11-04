@@ -1,0 +1,152 @@
+/* ------------ */
+/* -------- */
+/* Section Promociones */
+
+
+
+.sectionPopular {
+    margin-bottom: 20px;
+}
+
+.ban {
+    width: 100%;
+    height: 200px;
+    border: 6px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    h3 {
+        font-size: 3rem;
+        color: #fafafa;
+        text-shadow: 3px 1px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+        width: 100%;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    p {
+        color: #ffffff;
+        text-shadow: 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+        width: 100%;
+        height: 100px;
+        margin-top: 10px;
+        padding-top: 30px;
+        font-size: 15px;
+    }
+}
+
+.products {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    padding: 0;
+}
+
+.productsPopular {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    padding: 0;
+}
+
+.carta {
+    border-radius: 10px;
+    border: 2px solid;
+    min-height: 200px;
+    width: 33.3%;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.textoPopular {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    margin-left: 130px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+}
+
+.comentarios {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 1fr 40px 30px 1fr;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top:  1px solid rgb(90, 88, 88);
+    grid-template-areas: "titulo titulo titulo" "imagen nombre nombre" "imagen valoracion valoracion" "imagen comentario comentario" "imagen boton boton";
+
+    h3 {
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        font-style: oblique;
+        text-shadow: 3px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+        grid-area: titulo;
+        margin-left: 20px;
+    }
+
+    h4 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 30px;
+        text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+        grid-area: nombre;
+        margin-left: 20px;
+    }
+
+    p {
+        font-size: 20px;
+        color: white;
+        grid-area: comentario;
+        margin-left: 20px;
+        text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+    }
+}
+
+.rosario {
+    grid-area: imagen;
+    height: 70px;
+    width: 70px;
+
+    /* border-radius: 50px; */
+    border: 3px solid white;
+    margin-left: 30px;
+}
+
+.estrellas {
+    grid-area: valoracion;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.comentarios {
+    button {
+        grid-area: boton;
+        width: 90px;
+        background-color: rgb(187, 132, 44);
+        border: none;
+        border-radius: 8px;
+
+        &::after {
+            background-color: rgb(164, 111, 27);
+        }
+    }
+
+    a {
+        color: antiquewhite;
+        text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+        width: 90px;
+        margin-left: 20px;
+    }
+}

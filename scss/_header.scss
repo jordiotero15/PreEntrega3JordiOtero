@@ -10,11 +10,14 @@ header {
     padding: 0;
     flex-direction: column;
 }
+
 //SECTION DE "REDES"
 .containerRedes {
     height: 50px;
+
     ul {
         margin-top: 12px;
+        margin-right: 0.5%;
 
         p {
             height: 16px;
@@ -25,13 +28,11 @@ header {
 }
 
 .containerEncabezado {
-    // background-image: url(../img/categoriaBizcochos.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
-    // background-position-y: 0%;
-    background-color: $color-fondo;
+    height: auto;
+    background-color: #e5cfa5;
     border-bottom: 1px solid rgb(192, 189, 189);
+
+
 }
 
 /* LOGO "PANADERIA PARIS"*/
@@ -49,32 +50,36 @@ header {
 
 /*  */
 /* MENU PRINCIPAL */
-/* ACTIVE */
 
-.active a {
-    @include anclas;
-    color: rgb(0, 0, 0);
-    font-size: 1.3rem;
-    // background-color: $color-bg-header-a;
-    opacity: 84%;
-    text-shadow: none;
-}
 
 .menuNavegacion li {
     font-size: 1.2rem;
-    transition: all 0.5s;
-    text-shadow: $text-shadow;
 
     a {
         @include flex-row-center;
-        transition: all 0.4s;
+        transition: all 0.5s;
         height: 50px;
+        color: black;
 
         &:hover {
             background-color: $color-bg-header-a-hover;
             opacity: 84%;
+            color: rgb(255, 255, 255);
         }
     }
+
+
+}
+
+/* ACTIVE */
+
+.active a {
+    @include anclas;
+    color: rgb(255, 255, 255) !important;
+    background-color: $color-bg-header-a-hover;
+    font-size: 1.3rem;
+    opacity: 84%;
+    text-shadow: none;
 }
 
 /* MENU DESPLEGABLE */
@@ -141,18 +146,36 @@ header {
 }
 
 /* BARRA DE BUSQUEDA */
+.containerBuscador {
+    width: 30%;
 
-.btnBuscar {
-    position: relative;
-    right: 5px;
-    background-color: $color-bg-header-a;
-    width: 30px;
-    border-radius: 0 50px 50px 0;
-    padding: 10px 8px;
-    border: none;
-    transition: all 0.3s;
+    input {
+        &:hover {
+            border: 2px solid $color-fondo;
 
-    &:hover {
-        background-color: rgb(164, 111, 27);
+        }
+
+
+    }
+
+    button {
+        position: relative;
+        right: 40px;
+        top: 2px;
+        background-color: $color-bg-header-a;
+        width: 40px;
+        border-radius: 100px;
+        border: none;
+        transition: all 0.4s;
+        height: 34px;
+
+        &:hover {
+            background-color: $color-fondo;
+            color: white;
+        }
+
+        &:focus {
+            border: 2;
+        }
     }
 }

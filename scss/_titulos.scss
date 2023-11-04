@@ -1,0 +1,56 @@
+/* *********************************************** */
+/* Titulo */
+
+.titulo {
+    position: relative;
+    z-index: 2;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Section "Titulo" */
+
+.sectionTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+    div {
+        background-color: #c7a432;
+        width: 50%;
+        height: 30px;
+        opacity: 35%;
+        position: relative;
+        bottom: 35px;
+    }
+}
+
+//******************************
+//SUBTITULO
+
+.subTitulo {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+
+    h2 {
+        position: relative;
+        z-index: 2;
+        font-size: 2rem;
+        
+        
+    }
+
+    div {
+        background-color: #c7a432;
+        width: 50%;
+        height: 18px;
+        opacity: 25%;
+        position: relative;
+        bottom: 23px;
+        right: 10px;
+
+    }
+}

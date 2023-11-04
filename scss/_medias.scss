@@ -1,7 +1,23 @@
 /* MEDIA QUERIES HEADER */
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1000px) {
     .navbar {
         height: 100%;
+        padding: 0;
+    }
+
+    .containerEncabezado {
+        margin-left: 0;
+    }
+
+    .desplegable {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .containerBuscador {
+        width: 100%;
+
     }
 }
 
@@ -82,64 +98,64 @@
 /* MEDIAS QUERIES CARRITO HTML */
 @media (min-width: 320px) and (max-width: 425px) {
 
-    .sectionCarrito div {
-        align-items: center;
+    .sectionCarrito {
+        div {
+            align-items: center;
+            margin: 0;
+            padding: 3%;
+
+            h2 {
+                font-size: 1.2rem;
+
+                width: 100%;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            button {
+                width: 100%;
+
+                a {
+                    font-size: small;
+                }
+            }
+        }
     }
 
-    .parrafoCarrito {
-        margin: 0;
-        padding: 3%;
-    }
 
-    .parrafoCarrito h3 {
-        font-size: 0.88rem;
-        width: 100%;
-    }
-
-    .parrafoCarrito p {
-        font-size: small;
-    }
-
-    .parrafoCarrito button {
-        width: 50%;
-        margin-right: 60%;
-        height: auto;
-    }
-
-    .parrafoCarrito a {
-        font-size: small;
-    }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-    .sectionCarrito div {
-        align-items: center;
+    .sectionCarrito {
+        div {
+            align-items: center;
+            margin: 0;
+            padding: 3%;
+
+            h2 {
+                font-size: 1.1rem;
+                width: 100%;
+            }
+
+            p {
+                font-size: 0.9rem;
+                width: 100%;
+            }
+
+            button {
+                width: 50%;
+                margin-right: 55%;
+                height: auto;
+
+                a {
+                    font-size: small;
+                }
+            }
+        }
     }
 
-    .parrafoCarrito {
-        margin: 0;
-        padding: 3%;
-    }
-
-    .parrafoCarrito h3 {
-        font-size: 1.1rem;
-        width: 100%;
-    }
-
-    .parrafoCarrito p {
-        font-size: 0.9rem;
-        width: 100%;
-    }
-
-    .parrafoCarrito button {
-        width: 50%;
-        margin-right: 55%;
-        height: auto;
-    }
-
-    .parrafoCarrito a {
-        font-size: small;
-    }
 }
 
 /* MEDIAS QUERIES REGISTRO HTML */
@@ -376,6 +392,217 @@
 
         p {
             margin-bottom: 20%;
+        }
+    }
+}
+
+//MEDIAS PROMOCIONES Y CAROUSEL
+
+@media (min-width: 1200px) {
+    .containerAllPromos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+        margin-bottom: 10px;
+
+        div {
+
+            width: 100%;
+
+        }
+
+        .textoCards {
+            height: 40%;
+
+            p {
+                font-size: 100%;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .containerAllPromos {
+        .textoCards {
+
+            h4 {
+                font-size: 1.2rem;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    //CAROUSEL TAMAÑO
+    .containerPromos {
+        width: 100%;
+        margin-left: 0;
+
+        div {
+            a {
+                img {
+                    height: 400px;
+                }
+            }
+        }
+    }
+
+    .slide {
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+
+
+    .containerAllPromos {
+        div {
+            height: auto;
+
+            img {
+                height: 80%;
+            }
+        }
+    }
+
+    .textoCards {
+
+        h4 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+
+    }
+}
+
+@media (max-width: 425px) {
+    .containerPromos {
+
+        div {
+            a {
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    .textoCards {
+
+        h3 {
+            font-size: 1.9rem;
+        }
+
+
+    }
+}
+
+@media (min-width: 426px) and (max-width: 500px) {
+    .textoCards {
+        h3 {
+            font-size: 2.1rem;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .textoCards {
+
+        h4 {
+            font-size: 2rem;
+        }
+
+        p {
+            opacity: 100%;
+
+            span {
+                opacity: 100%;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    .textoCards {
+        h3 {
+            font-size: 2.4rem;
+        }
+
+    }
+}
+
+
+//MEDIAS SUBTITULOS
+@media (min-width: 320px) and (max-width: 1200px) {
+    .subTitulo {
+        width: 80%;
+        margin-left: 10%;
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        div {
+            width: 80%;
+            margin-left: 10%;
+            opacity: 25%;
+
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+    .subTitulo {
+        h2 {
+            font-size: 0.6rem;
+        }
+
+        div {
+            width: 60%;
+            height: 8px;
+            margin-left: 25%;
+            position: relative;
+            bottom: 13px;
+
+        }
+    }
+}
+
+@media (min-width: 360px) and (max-width: 470px) {
+
+    .subTitulo {
+        h2 {
+            font-size: 0.8rem;
+        }
+
+        div {
+            width: 60%;
+            height: 12px;
+            position: relative;
+            bottom: 15px;
+            left: 30px;
+
+        }
+    }
+}
+
+@media (min-width: 471px) and (max-width: 768px) {
+    .subTitulo {
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        div {
+            height: 20px;
         }
     }
 }

@@ -3,7 +3,6 @@
 //MIXIN ANCLAS DEL ACTIVE
 @mixin anclas {
     color: black;
-    font-weight: bold;
     text-decoration: none;
 
 }
@@ -14,4 +13,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+//MIXIN IMAGENES - COVER - CENTER
+
+@mixin img-cover-center {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

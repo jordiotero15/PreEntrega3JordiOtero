@@ -19,6 +19,10 @@ body {
   background-color: rgb(244, 230, 230);
 }
 
+main {
+  margin-bottom: 20px;
+}
+
 /* ------------------------- HEADER ---------------------------------------*/
 header {
   position: sticky;
@@ -36,6 +40,7 @@ header {
 }
 .containerRedes ul {
   margin-top: 12px;
+  margin-right: 0.5%;
 }
 .containerRedes ul p {
   height: 16px;
@@ -44,7 +49,8 @@ header {
 }
 
 .containerEncabezado {
-  background-color: rgb(244, 230, 230);
+  height: auto;
+  background-color: #e5cfa5;
   border-bottom: 1px solid rgb(192, 189, 189);
 }
 
@@ -61,32 +67,32 @@ header {
 
 /*  */
 /* MENU PRINCIPAL */
-/* ACTIVE */
-.active a {
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 1.3rem;
-  opacity: 84%;
-  text-shadow: none;
-}
-
 .menuNavegacion li {
   font-size: 1.2rem;
-  transition: all 0.5s;
-  text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
 }
 .menuNavegacion li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.4s;
+  transition: all 0.5s;
   height: 50px;
+  color: black;
 }
 .menuNavegacion li a:hover {
-  background-color: #c7ab51;
+  background-color: rgb(100, 99, 99);
   opacity: 84%;
+  color: rgb(255, 255, 255);
+}
+
+/* ACTIVE */
+.active a {
+  color: black;
+  text-decoration: none;
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(100, 99, 99);
+  font-size: 1.3rem;
+  opacity: 84%;
+  text-shadow: none;
 }
 
 /* MENU DESPLEGABLE */
@@ -104,7 +110,7 @@ header {
 }
 
 .ingresar {
-  background-color: #c7a432;
+  background-color: #e5cfa5;
   color: white;
   border-radius: 8px;
   width: 90%;
@@ -112,7 +118,7 @@ header {
   transition: all 0.4s;
 }
 .ingresar:hover {
-  background-color: #c7ab51;
+  background-color: rgb(100, 99, 99);
   color: rgb(255, 255, 255);
 }
 
@@ -149,18 +155,29 @@ header {
 }
 
 /* BARRA DE BUSQUEDA */
-.btnBuscar {
-  position: relative;
-  right: 5px;
-  background-color: #c7a432;
-  width: 30px;
-  border-radius: 0 50px 50px 0;
-  padding: 10px 8px;
-  border: none;
-  transition: all 0.3s;
+.containerBuscador {
+  width: 30%;
 }
-.btnBuscar:hover {
-  background-color: rgb(164, 111, 27);
+.containerBuscador input:hover {
+  border: 2px solid rgb(244, 230, 230);
+}
+.containerBuscador button {
+  position: relative;
+  right: 40px;
+  top: 2px;
+  background-color: #e5cfa5;
+  width: 40px;
+  border-radius: 100px;
+  border: none;
+  transition: all 0.4s;
+  height: 34px;
+}
+.containerBuscador button:hover {
+  background-color: rgb(244, 230, 230);
+  color: white;
+}
+.containerBuscador button:focus {
+  border: 2;
 }
 
 /* *********************************************** */
@@ -170,9 +187,10 @@ header {
   z-index: 2;
   font-size: 4rem;
   text-align: center;
+  font-weight: bold;
 }
 
-/* Section "Titutlo" */
+/* Section "Titulo" */
 .sectionTitulo {
   display: flex;
   flex-direction: column;
@@ -186,6 +204,26 @@ header {
   opacity: 35%;
   position: relative;
   bottom: 35px;
+}
+
+.subTitulo {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20px;
+}
+.subTitulo h2 {
+  position: relative;
+  z-index: 2;
+  font-size: 2rem;
+}
+.subTitulo div {
+  background-color: #c7a432;
+  width: 50%;
+  height: 18px;
+  opacity: 25%;
+  position: relative;
+  bottom: 23px;
+  right: 10px;
 }
 
 /* Section Bienvenida */
@@ -259,7 +297,7 @@ header {
 
 /* ------------ */
 /* -------- */
-/* Section Productos más populares */
+/* Section Promociones */
 .sectionPopular {
   margin-bottom: 20px;
 }
@@ -338,7 +376,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  border: 4px solid black;
+  border-top: 1px solid rgb(90, 88, 88);
   grid-template-areas: "titulo titulo titulo" "imagen nombre nombre" "imagen valoracion valoracion" "imagen comentario comentario" "imagen boton boton";
 }
 .comentarios h3 {
@@ -349,7 +387,7 @@ header {
   grid-area: titulo;
   margin-left: 20px;
 }
-.comentarios h5 {
+.comentarios h4 {
   color: white;
   text-transform: uppercase;
   font-size: 30px;
@@ -486,9 +524,7 @@ header {
 
 /************************************************************************************************/
 /* ----------------------------------------- */
-/* ---------CARRITO HTML----------- */
 .paginaCarrito {
-  height: auto;
   margin-bottom: 20px;
 }
 
@@ -496,35 +532,32 @@ header {
   display: flex;
   justify-content: center;
 }
-
-.paginaCarrito div {
+.sectionCarrito div {
+  margin-left: 80px;
   background-color: rgb(241, 218, 218);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
-  width: 80%;
+  width: 60%;
   padding: 1%;
+  padding-left: 10%;
 }
-
-.parrafoCarrito {
-  margin-left: 80px;
-}
-.parrafoCarrito h3 {
+.sectionCarrito div h2 {
   font-size: 3rem;
   font-weight: bolder;
 }
-.parrafoCarrito p {
+.sectionCarrito div p {
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: large;
 }
-.parrafoCarrito p span {
+.sectionCarrito div p span {
   font-weight: 100;
   color: #3b3a3a;
 }
-
-.paginaCarrito button {
+.sectionCarrito div button {
   margin-bottom: 20px;
   width: 200px;
   height: 30px;
@@ -532,7 +565,7 @@ header {
   border-radius: 5px;
   border: none;
 }
-.paginaCarrito button a {
+.sectionCarrito div button a {
   color: antiquewhite;
   text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
 }
@@ -987,21 +1020,83 @@ header {
   font-size: 14px;
 }
 
-.carousel {
+.slide {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .containerPromos {
-  width: 80%;
-  margin-left: 10%;
-  border: 1px solid black;
+  width: 50%;
+  margin-left: 25%;
+  border: 1px solid #e5cfa5;
 }
 .containerPromos div a img {
   height: 300px;
-  width: 50%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.containerAllPromos div {
+  height: 400px;
+  padding: 5px;
+  background-color: rgb(244, 230, 230);
+  text-align: center;
+}
+.containerAllPromos div img {
+  height: 60%;
+  width: 95%;
+  margin-left: 2.5%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.textoCards {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.textoCards h3 {
+  font-size: 3rem;
+  color: black;
+}
+.textoCards h4 {
+  font-size: 2rem;
+  color: black;
+}
+.textoCards p {
+  color: black;
+  opacity: 95%;
+  font-size: 1.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.textoCards p span {
+  color: red;
+  text-decoration: line-through;
+  opacity: 75%;
+}
+.textoCards button {
+  background-color: #e5cfa5;
+  border: none;
+  color: black;
+  transition: all 0.4s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  width: 50%;
+}
+.textoCards button:hover {
+  background-color: rgb(255, 221, 163);
+}
+.textoCards div {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 
 /* ---- */
@@ -1015,9 +1110,21 @@ header {
 }
 
 /* MEDIA QUERIES HEADER */
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1000px) {
   .navbar {
     height: 100%;
+    padding: 0;
+  }
+  .containerEncabezado {
+    margin-left: 0;
+  }
+  .desplegable {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .containerBuscador {
+    width: 100%;
   }
 }
 /* ************************************ */
@@ -1084,49 +1191,43 @@ header {
 @media (min-width: 320px) and (max-width: 425px) {
   .sectionCarrito div {
     align-items: center;
-  }
-  .parrafoCarrito {
     margin: 0;
     padding: 3%;
   }
-  .parrafoCarrito h3 {
-    font-size: 0.88rem;
+  .sectionCarrito div h2 {
+    font-size: 1.2rem;
     width: 100%;
   }
-  .parrafoCarrito p {
-    font-size: small;
+  .sectionCarrito div p {
+    font-size: 12px;
   }
-  .parrafoCarrito button {
-    width: 50%;
-    margin-right: 60%;
-    height: auto;
+  .sectionCarrito div button {
+    width: 100%;
   }
-  .parrafoCarrito a {
+  .sectionCarrito div button a {
     font-size: small;
   }
 }
 @media (min-width: 426px) and (max-width: 768px) {
   .sectionCarrito div {
     align-items: center;
-  }
-  .parrafoCarrito {
     margin: 0;
     padding: 3%;
   }
-  .parrafoCarrito h3 {
+  .sectionCarrito div h2 {
     font-size: 1.1rem;
     width: 100%;
   }
-  .parrafoCarrito p {
+  .sectionCarrito div p {
     font-size: 0.9rem;
     width: 100%;
   }
-  .parrafoCarrito button {
+  .sectionCarrito div button {
     width: 50%;
     margin-right: 55%;
     height: auto;
   }
-  .parrafoCarrito a {
+  .sectionCarrito div button a {
     font-size: small;
   }
 }
@@ -1306,6 +1407,129 @@ header {
   }
   .dos p {
     margin-bottom: 20%;
+  }
+}
+@media (min-width: 1200px) {
+  .containerAllPromos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    margin-bottom: 10px;
+  }
+  .containerAllPromos div {
+    width: 100%;
+  }
+  .containerAllPromos .textoCards {
+    height: 40%;
+  }
+  .containerAllPromos .textoCards p {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .containerAllPromos .textoCards h4 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1199px) {
+  .containerPromos {
+    width: 100%;
+    margin-left: 0;
+  }
+  .containerPromos div a img {
+    height: 400px;
+  }
+  .slide {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .containerAllPromos div {
+    height: auto;
+  }
+  .containerAllPromos div img {
+    height: 80%;
+  }
+  .textoCards h4 {
+    font-size: 2rem;
+  }
+  .textoCards p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .containerPromos div a img {
+    height: 250px;
+  }
+  .textoCards h3 {
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 426px) and (max-width: 500px) {
+  .textoCards h3 {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 500px) {
+  .textoCards h4 {
+    font-size: 2rem;
+  }
+  .textoCards p {
+    opacity: 100%;
+  }
+  .textoCards p span {
+    opacity: 100%;
+  }
+}
+@media (min-width: 501px) and (max-width: 600px) {
+  .textoCards h3 {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .subTitulo {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .subTitulo h2 {
+    text-align: center;
+    font-weight: bold;
+  }
+  .subTitulo div {
+    width: 80%;
+    margin-left: 10%;
+    opacity: 25%;
+  }
+}
+@media (min-width: 320px) and (max-width: 359px) {
+  .subTitulo h2 {
+    font-size: 0.6rem;
+  }
+  .subTitulo div {
+    width: 60%;
+    height: 8px;
+    margin-left: 25%;
+    position: relative;
+    bottom: 13px;
+  }
+}
+@media (min-width: 360px) and (max-width: 470px) {
+  .subTitulo h2 {
+    font-size: 0.8rem;
+  }
+  .subTitulo div {
+    width: 60%;
+    height: 12px;
+    position: relative;
+    bottom: 15px;
+    left: 30px;
+  }
+}
+@media (min-width: 471px) and (max-width: 768px) {
+  .subTitulo h2 {
+    font-size: 1.5rem;
+  }
+  .subTitulo div {
+    height: 20px;
   }
 }
 
