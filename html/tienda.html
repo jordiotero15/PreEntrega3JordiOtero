@@ -47,6 +47,7 @@
                         <li class="nav-item active" title="Tienda">
                             <a class="nav-link" aria-current="page" href="#">Tienda</a>
                         </li>
+
                         <li class="nav-item" title="Promociones">
                             <a class="nav-link" href="promociones.html">Promociones</a>
                         </li>
@@ -87,6 +88,7 @@
                         <li class="nav-item cart" title="Carrito">
                             <a class="nav-link text-secondary" href="cart.html"><i
                                     class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
                     </ul>
 
                 </div>
@@ -94,10 +96,914 @@
         </nav>
     </header>
     <main>
+
         <!-- Section "Titulo" -->
-        <section class="sectionTitulo">
+        <section class="sectionTitulo" id="dulces">
             <h1 class="titulo"> Tienda </h1>
             <div></div>
+        </section>
+
+        <!-- SECTION "SUBTITULO" -->
+        <section class="subTitulo">
+            <h2> Todos Nuestros Productos <span>a un click</span></h2>
+            <div></div>
+            <img src="../img/clickMouse.png" alt="Click Mouse">
+            <p>Ahora desde nuestra tienda online</p>
+        </section>
+        <!-- SECTION "FILTROS" -->
+        <section class="filtrosCategorias">
+            <h5>Bizcochos - Dulces</h5>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ordenar por
+            </a>
+            <ul class="dropdown-menu desplegable">
+                <li class="border-bottom-0"><a class="dropdown-item" href="#" title="Relevancia">Relevancia</a>
+                </li>
+                <li class="border-bottom-0"><a class="dropdown-item" href="#" title="Precio (Mayor a Menor)">Precio
+                        (Mayor a Menor)</a>
+                </li>
+                <li class="border-bottom-0"><a class="dropdown-item" href="#" title="Precio (Menor a Mayor)">Precio
+                        (Menor a Mayor)</a>
+                </li>
+                <li class="border-bottom-0"><a class="dropdown-item" href="#" title="Nombre (A - Z)">Nombre (A -
+                        Z)</a>
+                </li>
+                <li class="border-bottom-0"><a class="dropdown-item " href="#" title="Nombre (Z - A)">Nombre (Z
+                        - A)</a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Section "Menu" -->
+        <!-- Bizcochos - Dulces -->
+        <section class="container-fluid">
+            <div class="row containerProductos">
+
+                <div class="card col-xl-4 col-md-12 col-sm-12 cardCategorias">
+                    <div>
+                        <h4>Categorias</h4>
+                        <!-- Bizcochos -->
+                        <div class="btn-group dropend">
+                            <button type="button" class="btn btn-secondary btnPrimarioCategorias">
+                                Bizcochos
+                            </button>
+                            <button type="button"
+                                class="btn btn-secondary dropdown-toggle dropdown-toggle-split btnSecundarioCategorias"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropend</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#dulces" title="Bizcochos Dulces">Dulces</a></li>
+                                <li><a href="#salados" title="Bizcochos Salados">Salados</a></li>
+                                <li><a href="#panes" title="Panes">Panes</a></li>
+                                <li class="border-bottom-0" title="Galleteria"><a href="#galleteria">Galleteria</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Confiteria -->
+                        <div class="btn-group dropend">
+                            <button type="button" class="btn btn-secondary btnPrimarioCategorias">
+                                Confitería
+                            </button>
+                            <button type="button"
+                                class="btn btn-secondary dropdown-toggle dropdown-toggle-split btnSecundarioCategorias"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropend</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#masas">Masas</a></li>
+                                <li><a href="#postres">Postres</a></li>
+                                <li class="border-bottom-0"><a href="#alfajores">Alfajores y Ojitos</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Rotiseria -->
+                        <div class="btn-group dropend">
+                            <button type="button" class="btn btn-secondary btnPrimarioCategorias">
+                                Rotisería
+                            </button>
+                            <button type="button"
+                                class="btn btn-secondary dropdown-toggle dropdown-toggle-split btnSecundarioCategorias"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropend</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="border-bottom-0"><a href="#rotiseria"> Rotisería </a></li>
+                            </ul>
+                        </div>
+                        <!-- Mini-market -->
+                        <div class="btn-group dropend">
+                            <button type="button" class="btn btn-secondary btnPrimarioCategorias">
+                                Mini-Market
+                            </button>
+                            <button type="button"
+                                class="btn btn-secondary dropdown-toggle dropdown-toggle-split btnSecundarioCategorias"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropend</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#bebidas">Aguas y Bebidas</a></li>
+                                <li><a href="#lacteos">Lacteos y Quesos</a></li>
+                                <li><a href="#golosinas">Golosinas y Chocolates</a></li>
+                                <li class="border-bottom-0"><a href="#snacks">Snacks</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Promociones -->
+                        <div class="btn-group dropend">
+                            <button type="button" class="btn btn-secondary btnPrimarioCategorias">
+                                Promociones
+                            </button>
+                            <button type="button"
+                                class="btn btn-secondary dropdown-toggle dropdown-toggle-split btnSecundarioCategorias"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropend</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="border-bottom-0"><a href="promociones.html">Promociones</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-xl-2 col-md-6 col-sm-12 ">
+                    <img src="../img/bizcochosSurtidos.jpg" class="card-img-top" alt="Bizcochos Surtidos">
+                    <div class=" textoCards">
+                        <h4 class="card-title">Bizcochos Surtidos</h4>
+                        <p><span>$550</span> $490 el kg.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-2 col-md-6 col-sm-12 ">
+                    <img src="../img/budinVainilla.jpg" class="card-img-top" alt="Budín de Vainilla con Glacé de Limón">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title" id="masVend">Budín de Vainilla </h4>
+                        <p><span>$299</span> $229 c/unidad.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-2 col-md-6 col-sm-12 ">
+                    <img src="../img/cafeMedialunas.jpg" class="card-img-top" alt="Café con dos Medialunas">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Café con 2 Medialunas</h4>
+                        <p><span>$180</span> $150 </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-xl-2 col-md-6 col-sm-12 ">
+                    <img src="../img/empanadas.jpg" class="card-img-top" alt="Empanadas" id="salados">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Empanadas</h4>
+                        <p><span>$270</span> $249 Tres Empanadas a elección.</p>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bizcochos - Salados -->
+
+            <!-- SubTitulo Menu -->
+            <div class="subTituloMenu">
+                <h5>Bizcochos - Salados</h5>
+            </div>
+
+            <div class="row containerProductos ">
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaUno">
+                    <img src="../img/panDulce.jpg" class="card-img-top" alt="Pan Dulce">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Pan Dulce</h4>
+                        <p><span>$400</span> $350 Pan Dulces con frutos secos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaDos">
+                    <img src="../img/milanesaNapolitana.jpeg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Milanesa Napolitana</h4>
+                        <p><span>$750</span> $620 para dos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaTres">
+                    <img src="../img/tortaChocolate.jpg" class="card-img-top" alt="Postre de Chocolate">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Postre de Chocolate</h4>
+                        <p><span>$600</span> $500 la unidad</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaCuatro" id="panes">
+                    <img src="../img/maicena.jpg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Alfajores de maicena</h4>
+                        <p><span>$190</span> $160 bandeja de 6 unidades</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bizcochos - Panes -->
+
+            <!-- SubTitulo Menu -->
+            <div class="subTituloMenu">
+                <h5>Bizcochos - Panes</h5>
+            </div>
+
+            <div class="row containerProductos ">
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaUno">
+                    <img src="../img/panDulce.jpg" class="card-img-top" alt="Pan Dulce">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Pan Dulce</h4>
+                        <p><span>$400</span> $350 Pan Dulces con frutos secos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaDos">
+                    <img src="../img/milanesaNapolitana.jpeg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Milanesa Napolitana</h4>
+                        <p><span>$750</span> $620 para dos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaTres">
+                    <img src="../img/tortaChocolate.jpg" class="card-img-top" alt="Postre de Chocolate">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Postre de Chocolate</h4>
+                        <p><span>$600</span> $500 la unidad</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaCuatro" id="galleteria">
+                    <img src="../img/maicena.jpg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Alfajores de maicena</h4>
+                        <p><span>$190</span> $160 bandeja de 6 unidades</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bizcochos - Galleteria -->
+
+            <!-- SubTitulo Menu -->
+            <div class="subTituloMenu">
+                <h5>Bizcochos - Galleteria</h5>
+            </div>
+
+            <div class="row containerProductos " id="masas">
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaUno">
+                    <img src="../img/panDulce.jpg" class="card-img-top" alt="Pan Dulce">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Pan Dulce</h4>
+                        <p><span>$400</span> $350 Pan Dulces con frutos secos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaDos">
+                    <img src="../img/milanesaNapolitana.jpeg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Milanesa Napolitana</h4>
+                        <p><span>$750</span> $620 para dos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaTres">
+                    <img src="../img/tortaChocolate.jpg" class="card-img-top" alt="Postre de Chocolate">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Postre de Chocolate</h4>
+                        <p><span>$600</span> $500 la unidad</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaCuatro">
+                    <img src="../img/maicena.jpg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Alfajores de maicena</h4>
+                        <p><span>$190</span> $160 bandeja de 6 unidades</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Confitería - Masas -->
+
+            <!-- SubTitulo Menu -->
+            <div class="subTituloMenu">
+                <h5>Confitería - Masas</h5>
+            </div>
+
+            <div class="row containerProductos " id="postres">
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaUno">
+                    <img src="../img/panDulce.jpg" class="card-img-top" alt="Pan Dulce">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Pan Dulce</h4>
+                        <p><span>$400</span> $350 Pan Dulces con frutos secos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaDos">
+                    <img src="../img/milanesaNapolitana.jpeg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Milanesa Napolitana</h4>
+                        <p><span>$750</span> $620 para dos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaTres">
+                    <img src="../img/tortaChocolate.jpg" class="card-img-top" alt="Postre de Chocolate">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Postre de Chocolate</h4>
+                        <p><span>$600</span> $500 la unidad</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaCuatro">
+                    <img src="../img/maicena.jpg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Alfajores de maicena</h4>
+                        <p><span>$190</span> $160 bandeja de 6 unidades</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Confitería - Postres -->
+
+            <!-- SubTitulo Menu -->
+            <div class="subTituloMenu">
+                <h5>Confitería - Postres</h5>
+            </div>
+
+            <div class="row containerProductos " id="alfajores">
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaUno">
+                    <img src="../img/panDulce.jpg" class="card-img-top" alt="Pan Dulce">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Pan Dulce</h4>
+                        <p><span>$400</span> $350 Pan Dulces con frutos secos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaDos">
+                    <img src="../img/milanesaNapolitana.jpeg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Milanesa Napolitana</h4>
+                        <p><span>$750</span> $620 para dos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaTres">
+                    <img src="../img/tortaChocolate.jpg" class="card-img-top" alt="Postre de Chocolate">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Postre de Chocolate</h4>
+                        <p><span>$600</span> $500 la unidad</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaCuatro">
+                    <img src="../img/maicena.jpg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Alfajores de maicena</h4>
+                        <p><span>$190</span> $160 bandeja de 6 unidades</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Confitería - Alfajores -->
+
+            <!-- SubTitulo Menu -->
+            <div class="subTituloMenu">
+                <h5>Confitería - Alfajores y Ojitos</h5>
+            </div>
+
+            <div class="row containerProductos " id="rotiseria">
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaUno">
+                    <img src="../img/panDulce.jpg" class="card-img-top" alt="Pan Dulce">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Pan Dulce</h4>
+                        <p><span>$400</span> $350 Pan Dulces con frutos secos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaDos">
+                    <img src="../img/milanesaNapolitana.jpeg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Milanesa Napolitana</h4>
+                        <p><span>$750</span> $620 para dos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaTres">
+                    <img src="../img/tortaChocolate.jpg" class="card-img-top" alt="Postre de Chocolate">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Postre de Chocolate</h4>
+                        <p><span>$600</span> $500 la unidad</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaCuatro">
+                    <img src="../img/maicena.jpg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Alfajores de maicena</h4>
+                        <p><span>$190</span> $160 bandeja de 6 unidades</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Rotisería -->
+
+            <!-- SubTitulo Menu -->
+            <div class="subTituloMenu">
+                <h5> Rotisería - Todo</h5>
+            </div>
+
+            <div class="row containerProductos " id="bebidas">
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaUno">
+                    <img src="../img/panDulce.jpg" class="card-img-top" alt="Pan Dulce">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Pan Dulce</h4>
+                        <p><span>$400</span> $350 Pan Dulces con frutos secos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaDos">
+                    <img src="../img/milanesaNapolitana.jpeg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Milanesa Napolitana</h4>
+                        <p><span>$750</span> $620 para dos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaTres">
+                    <img src="../img/tortaChocolate.jpg" class="card-img-top" alt="Postre de Chocolate">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Postre de Chocolate</h4>
+                        <p><span>$600</span> $500 la unidad</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaCuatro">
+                    <img src="../img/maicena.jpg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Alfajores de maicena</h4>
+                        <p><span>$190</span> $160 bandeja de 6 unidades</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Minimarket - Aguas y Bebidas -->
+
+            <!-- SubTitulo Menu -->
+            <div class="subTituloMenu">
+                <h5> Mini-Market - Aguas y Bebidas</h5>
+            </div>
+
+            <div class="row containerProductos " id="lacteos">
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaUno">
+                    <img src="../img/panDulce.jpg" class="card-img-top" alt="Pan Dulce">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Pan Dulce</h4>
+                        <p><span>$400</span> $350 Pan Dulces con frutos secos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaDos">
+                    <img src="../img/milanesaNapolitana.jpeg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Milanesa Napolitana</h4>
+                        <p><span>$750</span> $620 para dos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaTres">
+                    <img src="../img/tortaChocolate.jpg" class="card-img-top" alt="Postre de Chocolate">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Postre de Chocolate</h4>
+                        <p><span>$600</span> $500 la unidad</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaCuatro">
+                    <img src="../img/maicena.jpg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Alfajores de maicena</h4>
+                        <p><span>$190</span> $160 bandeja de 6 unidades</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Minimarket - Lacteos y Quesos -->
+
+            <!-- SubTitulo Menu -->
+            <div class="subTituloMenu">
+                <h5> Mini-Market - Lacteos y Quesos</h5>
+            </div>
+
+            <div class="row containerProductos " id="golosinas">
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaUno">
+                    <img src="../img/panDulce.jpg" class="card-img-top" alt="Pan Dulce">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Pan Dulce</h4>
+                        <p><span>$400</span> $350 Pan Dulces con frutos secos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaDos">
+                    <img src="../img/milanesaNapolitana.jpeg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Milanesa Napolitana</h4>
+                        <p><span>$750</span> $620 para dos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaTres">
+                    <img src="../img/tortaChocolate.jpg" class="card-img-top" alt="Postre de Chocolate">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Postre de Chocolate</h4>
+                        <p><span>$600</span> $500 la unidad</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaCuatro">
+                    <img src="../img/maicena.jpg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Alfajores de maicena</h4>
+                        <p><span>$190</span> $160 bandeja de 6 unidades</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Minimarket - Golosinas y Chocolates -->
+
+            <!-- SubTitulo Menu -->
+            <div class="subTituloMenu">
+                <h5> Mini-Market - Golosinas y Chocolates</h5>
+            </div>
+
+            <div class="row containerProductos " id="snacks">
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaUno">
+                    <img src="../img/panDulce.jpg" class="card-img-top" alt="Pan Dulce">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Pan Dulce</h4>
+                        <p><span>$400</span> $350 Pan Dulces con frutos secos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaDos">
+                    <img src="../img/milanesaNapolitana.jpeg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Milanesa Napolitana</h4>
+                        <p><span>$750</span> $620 para dos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaTres">
+                    <img src="../img/tortaChocolate.jpg" class="card-img-top" alt="Postre de Chocolate">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Postre de Chocolate</h4>
+                        <p><span>$600</span> $500 la unidad</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaCuatro">
+                    <img src="../img/maicena.jpg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Alfajores de maicena</h4>
+                        <p><span>$190</span> $160 bandeja de 6 unidades</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Minimarket - Snacks -->
+
+            <!-- SubTitulo Menu -->
+            <div class="subTituloMenu">
+                <h5> Mini-Market - Snacks</h5>
+            </div>
+
+            <div class="row containerProductos ">
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaUno">
+                    <img src="../img/panDulce.jpg" class="card-img-top" alt="Pan Dulce">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Pan Dulce</h4>
+                        <p><span>$400</span> $350 Pan Dulces con frutos secos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaDos">
+                    <img src="../img/milanesaNapolitana.jpeg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Milanesa Napolitana</h4>
+                        <p><span>$750</span> $620 para dos</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaTres">
+                    <img src="../img/tortaChocolate.jpg" class="card-img-top" alt="Postre de Chocolate">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Postre de Chocolate</h4>
+                        <p><span>$600</span> $500 la unidad</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-xl-3 col-md-6 col-sm-12 cartaCuatro">
+                    <img src="../img/maicena.jpg" class="card-img-top" alt="Milanesa Napolitana">
+                    <div class="card-body textoCards">
+                        <h4 class="card-title">Alfajores de maicena</h4>
+                        <p><span>$190</span> $160 bandeja de 6 unidades</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Añadir al Carrito
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- SECTION "MODAL" -->
+        <!-- Modal -->
+        <section class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-5" id="exampleModalLabel">Carrito de Compras</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ¿Desea añadir este producto a su carrito de compras?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Aceptar</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="bg-dark pt-5 pb-1 container-fluid">
@@ -165,9 +1071,10 @@
                 <i class="fa-brands fa-whatsapp fa-2xl whats" title="WhatsApp"></i></a>
         </section>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
 
 </html>

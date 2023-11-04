@@ -399,7 +399,7 @@
 //MEDIAS PROMOCIONES Y CAROUSEL
 
 @media (min-width: 1200px) {
-    .containerAllPromos {
+    .containerProductos {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 10px;
@@ -422,12 +422,82 @@
 
 }
 
+//Tienda*************************************************
+@media (min-width: 1200px) {
+    .containerProductos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 10px;
+        margin-bottom: 10px;
+        grid-template-areas:
+            "vacio uno dos tres cuatro";
+
+        .cartaUno {
+            grid-area: uno;
+        }
+
+        .cartaDos {
+            grid-area: dos;
+        }
+
+        .cartaTres {
+            grid-area: tres;
+        }
+
+        .cartaCuatro {
+            grid-area: cuatro;
+        }
+
+        div {
+
+            width: 100%;
+
+        }
+
+    }
+
+    .cardCategorias {
+        height: 340px !important;
+        padding-top: 20px !important;
+
+        div {
+
+            h4 {
+                margin-right: 20px;
+            }
+
+            div {
+                height: 50px;
+
+
+            }
+
+        }
+    }
+}
+
 @media (min-width: 1200px) and (max-width: 1400px) {
-    .containerAllPromos {
+    .containerProductos {
         .textoCards {
 
             h4 {
                 font-size: 1.2rem;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1700px) {
+    .containerProductos {
+        .textoCards {
+
+            h4 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
             }
 
         }
@@ -457,7 +527,8 @@
     }
 
 
-    .containerAllPromos {
+
+    .containerProductos {
         div {
             height: auto;
 
@@ -477,8 +548,26 @@
             font-size: 1rem;
         }
 
+    }
+
+    .filtrosCategorias {
+        display: flex;
+        justify-content: flex-end;
+
+        h5 {
+            display: none;
+        }
 
     }
+
+    .cartaTres {
+        display: none;
+    }
+
+    .cartaCuatro {
+        display: none;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -539,40 +628,45 @@
 }
 
 
-//MEDIAS SUBTITULOS
+//MEDIAS SUBTITULOS******************************
 @media (min-width: 320px) and (max-width: 1200px) {
     .subTitulo {
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
+        margin-left: 0;
 
         h2 {
             text-align: center;
             font-weight: bold;
+            top: 20px;
+            margin-bottom: 20px;
+            span {
+                top: 0;
+            }
         }
 
         div {
-            width: 80%;
-            margin-left: 10%;
-            opacity: 25%;
+           display: none;
 
+        }
+
+        img {
+            display: none;
+        }
+
+        p {
+            text-align: center;
+            bottom: 0;
+            top: 25px;
         }
     }
 }
 
-@media (min-width: 320px) and (max-width: 359px) {
+@media (min-width: 320px) and (max-width: 425px) {
     .subTitulo {
         h2 {
             font-size: 0.6rem;
         }
-
-        div {
-            width: 60%;
-            height: 8px;
-            margin-left: 25%;
-            position: relative;
-            bottom: 13px;
-
-        }
+        
     }
 }
 
@@ -596,13 +690,27 @@
 
 @media (min-width: 471px) and (max-width: 768px) {
     .subTitulo {
-
+        margin-left: 0;
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
         div {
             height: 20px;
         }
+    }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .subTitulo {
+
+        h2 {
+            span {
+                padding: 10px;
+            }
+        }
+        p {
+            font-size: 0.7rem;
+        }
+
     }
 }

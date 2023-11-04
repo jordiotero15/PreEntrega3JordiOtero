@@ -49,7 +49,6 @@ header {
 }
 
 .containerEncabezado {
-  height: auto;
   background-color: #e5cfa5;
   border-bottom: 1px solid rgb(192, 189, 189);
 }
@@ -96,17 +95,18 @@ header {
 }
 
 /* MENU DESPLEGABLE */
+.desplegable {
+  position: relative;
+  text-align: center;
+  width: 230px;
+}
+
 /* SEPARADOR DE "MI CUENTA" */
 .separadorHeader {
   text-shadow: none !important;
 }
 .separadorHeader span {
   color: rgb(139, 138, 138);
-}
-
-.desplegable {
-  text-align: center;
-  width: 280px;
 }
 
 .ingresar {
@@ -195,7 +195,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(192, 189, 189);
 }
 .sectionTitulo div {
   background-color: #c7a432;
@@ -208,13 +208,21 @@ header {
 
 .subTitulo {
   width: 50%;
-  margin-left: 25%;
+  margin-left: 40%;
   margin-top: 20px;
 }
 .subTitulo h2 {
   position: relative;
   z-index: 2;
   font-size: 2rem;
+}
+.subTitulo h2 span {
+  text-transform: uppercase;
+  background-color: rgb(28, 27, 27);
+  color: white;
+  position: relative;
+  top: 10px;
+  padding: 20px;
 }
 .subTitulo div {
   background-color: #c7a432;
@@ -224,6 +232,20 @@ header {
   position: relative;
   bottom: 23px;
   right: 10px;
+}
+.subTitulo p {
+  text-transform: uppercase;
+  opacity: 90%;
+  position: relative;
+  bottom: 60px;
+  z-index: 3;
+}
+.subTitulo img {
+  position: relative;
+  left: 580px;
+  bottom: 7px;
+  width: 50px;
+  z-index: 3;
 }
 
 /* Section Bienvenida */
@@ -433,6 +455,60 @@ header {
   text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
   width: 90px;
   margin-left: 20px;
+}
+
+.cardCategorias div h4 {
+  color: black !important;
+  text-align: center;
+}
+.cardCategorias div div {
+  height: 50px;
+}
+.cardCategorias div div button {
+  color: black;
+  background-color: #e5cfa5;
+  border: none;
+  transition: all 0.4s;
+}
+.cardCategorias div div button:hover {
+  background-color: rgb(255, 221, 163);
+}
+.cardCategorias div div .btnPrimarioCategorias {
+  width: 90%;
+}
+.cardCategorias div div .btnSecundarioCategorias {
+  width: 10%;
+}
+.cardCategorias div div ul {
+  background-color: #e5cfa5;
+  opacity: 90%;
+  width: 200px;
+}
+.cardCategorias div div ul li {
+  text-align: center;
+  border-bottom: 1px solid rgb(100, 99, 99);
+}
+.cardCategorias div div ul li a {
+  color: black;
+  transition: all 0.4s;
+}
+.cardCategorias div div ul li a:hover {
+  color: white;
+}
+
+.filtrosCategorias {
+  display: flex;
+  justify-content: space-between;
+}
+.filtrosCategorias h5 {
+  margin-left: 20%;
+}
+.filtrosCategorias a {
+  margin-right: 20px;
+}
+
+.subTituloMenu h5 {
+  margin-left: 20%;
 }
 
 /* -------------------------------------- */
@@ -1037,13 +1113,13 @@ header {
   background-size: cover;
 }
 
-.containerAllPromos div {
+.containerProductos div {
   height: 400px;
   padding: 5px;
   background-color: rgb(244, 230, 230);
   text-align: center;
 }
-.containerAllPromos div img {
+.containerProductos div img {
   height: 60%;
   width: 95%;
   margin-left: 2.5%;
@@ -1410,25 +1486,67 @@ header {
   }
 }
 @media (min-width: 1200px) {
-  .containerAllPromos {
+  .containerProductos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 10px;
     margin-bottom: 10px;
   }
-  .containerAllPromos div {
+  .containerProductos div {
     width: 100%;
   }
-  .containerAllPromos .textoCards {
+  .containerProductos .textoCards {
     height: 40%;
   }
-  .containerAllPromos .textoCards p {
+  .containerProductos .textoCards p {
     font-size: 100%;
   }
 }
+@media (min-width: 1200px) {
+  .containerProductos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    margin-bottom: 10px;
+    grid-template-areas: "vacio uno dos tres cuatro";
+  }
+  .containerProductos .cartaUno {
+    grid-area: uno;
+  }
+  .containerProductos .cartaDos {
+    grid-area: dos;
+  }
+  .containerProductos .cartaTres {
+    grid-area: tres;
+  }
+  .containerProductos .cartaCuatro {
+    grid-area: cuatro;
+  }
+  .containerProductos div {
+    width: 100%;
+  }
+  .cardCategorias {
+    height: 340px !important;
+    padding-top: 20px !important;
+  }
+  .cardCategorias div h4 {
+    margin-right: 20px;
+  }
+  .cardCategorias div div {
+    height: 50px;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1400px) {
-  .containerAllPromos .textoCards h4 {
+  .containerProductos .textoCards h4 {
     font-size: 1.2rem;
+  }
+}
+@media (min-width: 1401px) and (max-width: 1700px) {
+  .containerProductos .textoCards h4 {
+    font-size: 1.5rem;
+  }
+  .containerProductos .textoCards p {
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 1199px) {
@@ -1443,10 +1561,10 @@ header {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .containerAllPromos div {
+  .containerProductos div {
     height: auto;
   }
-  .containerAllPromos div img {
+  .containerProductos div img {
     height: 80%;
   }
   .textoCards h4 {
@@ -1454,6 +1572,19 @@ header {
   }
   .textoCards p {
     font-size: 1rem;
+  }
+  .filtrosCategorias {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .filtrosCategorias h5 {
+    display: none;
+  }
+  .cartaTres {
+    display: none;
+  }
+  .cartaCuatro {
+    display: none;
   }
 }
 @media (max-width: 425px) {
@@ -1487,29 +1618,33 @@ header {
 }
 @media (min-width: 320px) and (max-width: 1200px) {
   .subTitulo {
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    margin-left: 0;
   }
   .subTitulo h2 {
     text-align: center;
     font-weight: bold;
+    top: 20px;
+    margin-bottom: 20px;
+  }
+  .subTitulo h2 span {
+    top: 0;
   }
   .subTitulo div {
-    width: 80%;
-    margin-left: 10%;
-    opacity: 25%;
+    display: none;
+  }
+  .subTitulo img {
+    display: none;
+  }
+  .subTitulo p {
+    text-align: center;
+    bottom: 0;
+    top: 25px;
   }
 }
-@media (min-width: 320px) and (max-width: 359px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .subTitulo h2 {
     font-size: 0.6rem;
-  }
-  .subTitulo div {
-    width: 60%;
-    height: 8px;
-    margin-left: 25%;
-    position: relative;
-    bottom: 13px;
   }
 }
 @media (min-width: 360px) and (max-width: 470px) {
@@ -1525,11 +1660,22 @@ header {
   }
 }
 @media (min-width: 471px) and (max-width: 768px) {
+  .subTitulo {
+    margin-left: 0;
+  }
   .subTitulo h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .subTitulo div {
     height: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .subTitulo h2 span {
+    padding: 10px;
+  }
+  .subTitulo p {
+    font-size: 0.7rem;
   }
 }
 

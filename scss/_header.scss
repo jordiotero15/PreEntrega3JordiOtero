@@ -11,6 +11,7 @@ header {
     flex-direction: column;
 }
 
+
 //SECTION DE "REDES"
 .containerRedes {
     height: 50px;
@@ -28,8 +29,7 @@ header {
 }
 
 .containerEncabezado {
-    height: auto;
-    background-color: #e5cfa5;
+    background-color: $color-bg-header-a;
     border-bottom: 1px solid rgb(192, 189, 189);
 
 
@@ -54,7 +54,7 @@ header {
 
 .menuNavegacion li {
     font-size: 1.2rem;
-
+    
     a {
         @include flex-row-center;
         transition: all 0.5s;
@@ -83,7 +83,12 @@ header {
 }
 
 /* MENU DESPLEGABLE */
+.desplegable {
+    position: relative;
+    text-align: center;
+    width: 230px;
 
+}
 /* SEPARADOR DE "MI CUENTA" */
 
 .separadorHeader {
@@ -93,12 +98,6 @@ header {
         color: rgb(139, 138, 138);
     }
 }
-
-.desplegable {
-    text-align: center;
-    width: 280px;
-}
-
 .ingresar {
     background-color: $color-bg-header-a;
     color: white;

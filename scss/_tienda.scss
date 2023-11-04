@@ -1,0 +1,73 @@
+.cardCategorias {
+  div {
+
+    h4 {
+      color: black !important;
+      text-align: center;
+    }
+
+    div {
+      height: 50px;
+
+      button {
+        color: black;
+        background-color: $color-bg-header-a;
+        border: none;
+        transition: all 0.4s;
+
+        &:hover {
+          background-color: rgb(255, 221, 163);
+        }
+
+
+      }
+
+      .btnPrimarioCategorias {
+        width: 90%;
+      }
+
+      .btnSecundarioCategorias {
+        width: 10%;
+      }
+
+      ul {
+        background-color: $color-bg-header-a;
+        opacity: 90%;
+        width: 200px;
+
+        li {
+          text-align: center;
+          border-bottom: 1px solid $color-bg-header-a-hover;
+
+
+          a {
+            color: black;
+            transition: all 0.4s;
+
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.filtrosCategorias {
+  display: flex;
+  justify-content: space-between;
+  h5 {
+    margin-left: 20%;
+  }
+  a {
+    margin-right: 20px;
+   
+  }
+}
+
+.subTituloMenu {
+  h5 {
+    margin-left: 20%;
+  }
+}
