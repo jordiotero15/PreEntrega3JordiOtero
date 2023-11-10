@@ -695,6 +695,7 @@ header {
   background-color: #e5cfa5;
   border-radius: 20px;
   padding: 30px;
+  box-shadow: 5px 5px 2px;
 }
 .comentarios div div h6 {
   font-size: 1.2rem;
@@ -709,6 +710,7 @@ header {
   display: flex;
   justify-content: flex-end;
   padding: 0;
+  box-shadow: none;
 }
 .comentarios div div div img {
   width: 80px;
