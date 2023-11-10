@@ -413,10 +413,6 @@
 
         .textoCards {
             height: 40%;
-
-            p {
-                font-size: 100%;
-            }
         }
     }
 
@@ -603,11 +599,17 @@
 @media (min-width: 320px) and (max-width: 500px) {
     .textoCards {
 
+        h3 {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
         h4 {
             font-size: 2rem;
         }
 
         p {
+            font-size: 0.9rem;
             opacity: 100%;
 
             span {
@@ -639,13 +641,14 @@
             font-weight: bold;
             top: 20px;
             margin-bottom: 20px;
+
             span {
                 top: 0;
             }
         }
 
         div {
-           display: none;
+            display: none;
 
         }
 
@@ -666,7 +669,7 @@
         h2 {
             font-size: 0.6rem;
         }
-        
+
     }
 }
 
@@ -691,6 +694,7 @@
 @media (min-width: 471px) and (max-width: 768px) {
     .subTitulo {
         margin-left: 0;
+
         h2 {
             font-size: 1.3rem;
         }
@@ -700,6 +704,7 @@
         }
     }
 }
+
 @media (min-width: 320px) and (max-width: 768px) {
     .subTitulo {
 
@@ -708,9 +713,190 @@
                 padding: 10px;
             }
         }
+
         p {
             font-size: 0.7rem;
         }
 
+    }
+}
+
+//************ MEDIA TIENDA ****************
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+    //categorias
+    .sectionCategorias {
+        margin-top: 50px;
+
+        div {
+            width: 100%;
+            margin: 0;
+            padding: 0 10px;
+
+            div {
+                display: none;
+            }
+
+            ul {
+                grid-template-columns: 1fr;
+                row-gap: 20px;
+
+
+
+                li {
+
+                    a {
+                        p {
+                            width: 50%;
+                            position: relative;
+                            z-index: 2;
+                            bottom: 60%;
+                            margin-left: 25%;
+                            font-size: 1.4rem;
+                            background-color: $color-bg-header-a;
+                            padding: 10px;
+                            opacity: 80%;
+                            text-align: center;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Opiniones comentarios
+    .comentarios {
+        grid-template-columns: 1fr;
+
+        #comDos {
+            display: none;
+        }
+
+        #comTres {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .sectionCategorias {
+        margin-top: 40px;
+
+        div {
+            width: 100%;
+            margin: 0;
+
+            div {
+                display: none;
+            }
+
+            ul {
+
+                li {
+
+                    a {
+                        p {
+                            max-width: fit-content;
+                            position: relative;
+                            z-index: 2;
+                            bottom: 60%;
+                            margin-left: 30%;
+                            font-size: 1.8rem;
+                            background-color: $color-bg-header-a;
+                            padding: 10px;
+                            opacity: 80%;
+                            text-align: center;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .comentarios {
+        grid-template-columns: 1fr;
+
+        div {
+            padding: 0 15% 0 20%;
+            div {
+                width: 90%;
+                height: 250px;
+            }
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        #comDos {
+            display: none;
+        }
+
+        #comTres {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 426px) and (max-width: 550px) {
+
+    .sectionCategorias {
+
+        div {
+            ul {
+
+                li {
+
+                    a {
+                        p {
+                            max-width: min-content;
+                            margin-left: 20%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    .sectionCategorias {
+        margin-top: 40px;
+    }
+
+    .comentarios {
+        
+        div {
+
+            div {
+
+                h6 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    font-size: 0.8rem;
+                }
+
+                div {
+                    img {
+                        display: none;
+                    }
+                }
+              
+            }
+
+            img {
+                height: 80px;
+                width: 80px;
+            }
+        }
+
+    
     }
 }

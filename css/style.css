@@ -208,8 +208,8 @@ header {
 
 .subTitulo {
   width: 50%;
-  margin-left: 40%;
-  margin-top: 20px;
+  margin-left: 27%;
+  margin-top: 40px;
 }
 .subTitulo h2 {
   position: relative;
@@ -248,37 +248,32 @@ header {
   z-index: 3;
 }
 
-/* Section Bienvenida */
-.mensajeBienvenida {
+.sectionCategorias div {
+  width: 50%;
+  margin-left: 25%;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.sectionCategorias div div {
+  height: 10px;
   width: 100%;
-  height: 350px;
-  background-image: url(../img/inicioBienvenida.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  margin: 10px 0 10px 0;
 }
-.mensajeBienvenida p {
-  color: whitesmoke;
-  margin-top: 50px;
-  margin-left: 50px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 3rem;
-  text-transform: uppercase;
+.sectionCategorias div div ol {
+  width: 100%;
+  padding: 0 15% 0 15%;
+  display: flex;
+  justify-content: space-between;
 }
-.mensajeBienvenida a {
-  background-color: rgb(41, 39, 39);
-  text-decoration: underline white;
-  border-radius: 10px;
-  color: white;
+.sectionCategorias div div ol li {
+  font-size: 2rem;
 }
-.mensajeBienvenida a:hover {
-  background-color: #141414;
+.sectionCategorias div .subCatDos ol {
+  padding: 0 0 0 15%;
 }
-
-.sectionCategorias {
-  height: auto;
+.sectionCategorias div .subCatDos ol #textMini {
+  margin-right: 12%;
 }
 
 .containerCategorias {
@@ -286,175 +281,32 @@ header {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 500px 500px;
-}
-.containerCategorias li {
-  width: 100%;
+  column-gap: 10px;
 }
 
 .categorias {
-  display: flex;
-  justify-content: center;
-  height: 500px;
   width: 100%;
-  border: 4px solid black;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.categorias a p {
+  position: relative;
+  z-index: 5;
+  color: black;
+  font-size: 2rem;
+}
+.categorias a img {
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 60%;
-  transition: all 0.1s;
+  background-position-x: 60%;
+  transition: all 0.4s;
 }
-.categorias a {
-  display: flex;
-  font-size: 5rem;
-  align-items: center;
-  color: white;
-  text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
-  transition: all 0.1s;
-}
-.categorias a:hover {
+.categorias a img:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.2);
-}
-
-/* ------------ */
-/* -------- */
-/* Section Promociones */
-.sectionPopular {
-  margin-bottom: 20px;
-}
-
-.ban {
-  width: 100%;
-  height: 200px;
-  border: 6px solid black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.ban h3 {
-  font-size: 3rem;
-  color: #fafafa;
-  text-shadow: 3px 1px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
-  width: 100%;
-  height: 100px;
-  margin-top: 20px;
-}
-.ban p {
-  color: #ffffff;
-  text-shadow: 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
-  width: 100%;
-  height: 100px;
-  margin-top: 10px;
-  padding-top: 30px;
-  font-size: 15px;
-}
-
-.products {
-  display: flex;
-  width: 100%;
-  height: 200px;
-  margin: auto;
-  padding: 0;
-}
-
-.productsPopular {
-  display: flex;
-  width: 100%;
-  background-color: black;
-  padding: 0;
-}
-
-.carta {
-  border-radius: 10px;
-  border: 2px solid;
-  min-height: 200px;
-  width: 33.3%;
-  font-weight: bold;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-}
-
-.textoPopular {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: flex-end;
-  margin-left: 130px;
-  margin-top: 10px;
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
-}
-
-.comentarios {
-  display: grid;
-  grid-template-columns: 100px 1fr 1fr;
-  grid-template-rows: 1fr 40px 30px 1fr;
-  height: 250px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-top: 1px solid rgb(90, 88, 88);
-  grid-template-areas: "titulo titulo titulo" "imagen nombre nombre" "imagen valoracion valoracion" "imagen comentario comentario" "imagen boton boton";
-}
-.comentarios h3 {
-  font-size: 3rem;
-  color: rgb(255, 255, 255);
-  font-style: oblique;
-  text-shadow: 3px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
-  grid-area: titulo;
-  margin-left: 20px;
-}
-.comentarios h4 {
-  color: white;
-  text-transform: uppercase;
-  font-size: 30px;
-  text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
-  grid-area: nombre;
-  margin-left: 20px;
-}
-.comentarios p {
-  font-size: 20px;
-  color: white;
-  grid-area: comentario;
-  margin-left: 20px;
-  text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
-}
-
-.rosario {
-  grid-area: imagen;
-  height: 70px;
-  width: 70px;
-  /* border-radius: 50px; */
-  border: 3px solid white;
-  margin-left: 30px;
-}
-
-.estrellas {
-  grid-area: valoracion;
-  height: 30px;
-  margin-left: 20px;
-}
-
-.comentarios button {
-  grid-area: boton;
-  width: 90px;
-  background-color: rgb(187, 132, 44);
-  border: none;
-  border-radius: 8px;
-}
-.comentarios button::after {
-  background-color: rgb(164, 111, 27);
-}
-.comentarios a {
-  color: antiquewhite;
-  text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
-  width: 90px;
-  margin-left: 20px;
 }
 
 .cardCategorias div h4 {
@@ -616,11 +468,10 @@ header {
   justify-content: center;
   align-items: flex-start;
   width: 60%;
-  padding: 1%;
-  padding-left: 10%;
+  padding: 0 10%;
 }
 .sectionCarrito div h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bolder;
 }
 .sectionCarrito div p {
@@ -637,13 +488,14 @@ header {
   margin-bottom: 20px;
   width: 200px;
   height: 30px;
-  background-color: rgb(187, 132, 44);
+  background-color: #e5cfa5;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 .sectionCarrito div button a {
-  color: antiquewhite;
-  text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+  width: max-content;
+  color: black;
 }
 
 /* *************************************************************************************************** */
@@ -670,12 +522,13 @@ header {
   flex-direction: column;
   justify-content: space-between;
   background-color: rgb(204, 194, 194);
-  opacity: 80%;
+  opacity: 90%;
   height: 90%;
   width: 96%;
   padding: 50px;
 }
 .sectionNosotros h2 {
+  z-index: 10;
   font-style: italic;
   font-size: 3rem;
   font-weight: bolder;
@@ -732,7 +585,34 @@ header {
 }
 
 /* ---- */
-/* Section "Comentarios" */
+/* Section "Dónde estamos? */
+.contactoUbicacion {
+  margin-top: 3%;
+}
+.contactoUbicacion div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "titulo img" "gps gps";
+  row-gap: 20px;
+}
+.contactoUbicacion h3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: titulo;
+  font-size: 2rem;
+}
+.contactoUbicacion img {
+  grid-area: img;
+  width: 100px;
+}
+.contactoUbicacion iframe {
+  grid-area: gps;
+  width: 99%;
+}
+
+/* ---- */
+/* Section "Comentarios Contacto HTML" */
 .sectionComentarios {
   display: flex;
   justify-content: center;
@@ -799,31 +679,53 @@ header {
   background-color: #383434;
 }
 
-/* ---- */
-/* Section "Dónde estamos? */
-.contactoUbicacion {
-  margin-top: 3%;
-}
-.contactoUbicacion div {
+.comentarios {
+  width: 100%;
+  margin-top: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "titulo img" "gps gps";
-  row-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
-.contactoUbicacion h3 {
+.comentarios div {
+  width: 100%;
+  padding: 0 15%;
+}
+.comentarios div div {
+  width: 100%;
+  height: 270px;
+  background-color: #e5cfa5;
+  border-radius: 20px;
+  padding: 30px;
+}
+.comentarios div div h6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.comentarios div div p {
+  height: 80%;
+}
+.comentarios div div div {
+  height: 0;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  grid-area: titulo;
-  font-size: 2rem;
+  padding: 0;
 }
-.contactoUbicacion img {
-  grid-area: img;
+.comentarios div div div img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.comentarios div img {
+  position: relative;
+  z-index: 3;
+  bottom: 60px;
+  margin-left: 20%;
   width: 100px;
-}
-.contactoUbicacion iframe {
-  grid-area: gps;
-  width: 99%;
+  height: 100px;
+  border-radius: 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*********** -- REGISTRO HTML -- ************/
@@ -1135,20 +1037,25 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: #e5cfa5;
+  opacity: 80%;
 }
 .textoCards h3 {
+  opacity: 100%;
   font-size: 3rem;
   color: black;
 }
 .textoCards h4 {
   font-size: 2rem;
   color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .textoCards p {
   color: black;
   opacity: 95%;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: lowercase;
 }
 .textoCards p span {
   color: red;
@@ -1179,7 +1086,7 @@ header {
 /* LOGO "WHATSAPP" */
 .whats {
   width: 2rem;
-  color: #39b400;
+  color: #e5cfa5;
   position: fixed;
   bottom: 3%;
   right: 0%;
@@ -1498,9 +1405,6 @@ header {
   .containerProductos .textoCards {
     height: 40%;
   }
-  .containerProductos .textoCards p {
-    font-size: 100%;
-  }
 }
 @media (min-width: 1200px) {
   .containerProductos {
@@ -1601,10 +1505,15 @@ header {
   }
 }
 @media (min-width: 320px) and (max-width: 500px) {
+  .textoCards h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
   .textoCards h4 {
     font-size: 2rem;
   }
   .textoCards p {
+    font-size: 0.9rem;
     opacity: 100%;
   }
   .textoCards p span {
@@ -1676,6 +1585,112 @@ header {
   }
   .subTitulo p {
     font-size: 0.7rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .sectionCategorias {
+    margin-top: 50px;
+  }
+  .sectionCategorias div {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .sectionCategorias div div {
+    display: none;
+  }
+  .sectionCategorias div ul {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .sectionCategorias div ul li a p {
+    width: 50%;
+    position: relative;
+    z-index: 2;
+    bottom: 60%;
+    margin-left: 25%;
+    font-size: 1.4rem;
+    background-color: #e5cfa5;
+    padding: 10px;
+    opacity: 80%;
+    text-align: center;
+  }
+  .comentarios {
+    grid-template-columns: 1fr;
+  }
+  .comentarios #comDos {
+    display: none;
+  }
+  .comentarios #comTres {
+    display: none;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .sectionCategorias {
+    margin-top: 40px;
+  }
+  .sectionCategorias div {
+    width: 100%;
+    margin: 0;
+  }
+  .sectionCategorias div div {
+    display: none;
+  }
+  .sectionCategorias div ul li a p {
+    max-width: fit-content;
+    position: relative;
+    z-index: 2;
+    bottom: 60%;
+    margin-left: 30%;
+    font-size: 1.8rem;
+    background-color: #e5cfa5;
+    padding: 10px;
+    opacity: 80%;
+    text-align: center;
+  }
+  .comentarios {
+    grid-template-columns: 1fr;
+  }
+  .comentarios div {
+    padding: 0 15% 0 20%;
+  }
+  .comentarios div div {
+    width: 90%;
+    height: 250px;
+  }
+  .comentarios div img {
+    width: 80px;
+    height: 80px;
+  }
+  .comentarios #comDos {
+    display: none;
+  }
+  .comentarios #comTres {
+    display: none;
+  }
+}
+@media (min-width: 426px) and (max-width: 550px) {
+  .sectionCategorias div ul li a p {
+    max-width: min-content;
+    margin-left: 20%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+  .sectionCategorias {
+    margin-top: 40px;
+  }
+  .comentarios div div h6 {
+    font-size: 1.2rem;
+  }
+  .comentarios div div p {
+    font-size: 0.8rem;
+  }
+  .comentarios div div div img {
+    display: none;
+  }
+  .comentarios div img {
+    height: 80px;
+    width: 80px;
   }
 }
 

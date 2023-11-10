@@ -20,26 +20,6 @@
     }
 }
 
-//Todas las promos
-
-// .containerAllPromos {
-//     div {
-//         height: 400px;
-//         padding: 5px;
-//         background-color: $color-fondo;
-//         text-align: center;
-
-//         img {
-//             height: 60%;
-//             width: 95%;
-//             margin-left: 2.5%;
-//             @include img-cover-center;
-//             border-radius: 10px;
-//         }
-
-//     }
-// }
-
 .containerProductos {
     div {
         height: 400px;
@@ -65,8 +45,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: $color-bg-header-a;
+    opacity: 80%;
 
     h3 {
+        opacity: 100%;
         font-size: 3rem;
         color: black;
     }
@@ -74,13 +57,16 @@
     h4 {
         font-size: 2rem;
         color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
     }
 
     p {
         color: black;
         opacity: 95%;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: lowercase;
 
         span {
             color: red;
@@ -97,7 +83,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 14px;
         width: 50%;
-        
+
 
         &:hover {
             background-color: rgb(255, 221, 163);

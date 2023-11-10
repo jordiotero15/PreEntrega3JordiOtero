@@ -22,13 +22,14 @@
         flex-direction: column;
         justify-content: space-between;
         background-color: rgb(204, 194, 194);
-        opacity: 80%;
+        opacity: 90%;
         height: 90%;
         width: 96%;
         padding: 50px;
     }
 
     h2 {
+        z-index: 10;
         font-style: italic;
         font-size: 3rem;
         font-weight: bolder;
@@ -94,81 +95,6 @@
     }
 }
 
-/* ---- */
-
-/* Section "Comentarios" */
-
-.sectionComentarios {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    height: 350px;
-}
-
-.mensajeComentarios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    background-image: url(../img/sectionComentarios.png);
-    background-size: cover;
-    background-position: center;
-    margin-right: 20px;
-    border: 4px solid black;
-}
-
-.dos {
-    background-image: none;
-    background-color: #ffffff;
-    opacity: 80%;
-    border: none;
-    height: 90%;
-    width: 98%;
-    margin-left: 4px;
-    text-align: justify;
-
-    h3 {
-        text-transform: uppercase;
-        margin-bottom: 80px;
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    p {
-        text-align: center;
-    }
-}
-
-/* Formulario de Comentarios */
-
-.containerFormularioComentarios {
-    display: grid;
-    row-gap: 10px;
-}
-
-.btnContacto {
-    display: flex;
-    justify-content: flex-end;
-
-    button {
-        border: none;
-        margin-right: 30px;
-    }
-
-    input {
-        background-color: black;
-        border: none;
-        color: white;
-        text-transform: uppercase;
-        width: 80px;
-        height: 40px;
-        cursor: pointer;
-
-        &:hover {
-            background-color: #383434;
-        }
-    }
-}
 
 /* ---- */
 /* Section "Dónde estamos? */
