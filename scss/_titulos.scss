@@ -32,14 +32,14 @@
 
 .subTitulo {
     width: 50%;
-    margin-left: 27%;
+    margin-left: 35%;
     margin-top: 40px;
 
     h2 {
         position: relative;
         z-index: 2;
         font-size: 2rem;
-        
+
         span {
             text-transform: uppercase;
             background-color: rgb(28, 27, 27);
@@ -75,5 +75,16 @@
         bottom: 7px;
         width: 50px;
         z-index: 3;
+    }
+}
+
+//SUBTITULOS DE PRODUCTOS - TIENDA HTML
+
+.subTituloMenu {
+    margin-top: 40px;
+
+    h5 {
+        margin-left: 20%;
+        font-weight: bolder;
     }
 }

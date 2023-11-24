@@ -56,8 +56,8 @@ header {
 /* LOGO "PANADERIA PARIS"*/
 .logo {
   cursor: pointer;
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   transition: all 0.3s;
 }
 .logo:hover {
@@ -208,7 +208,7 @@ header {
 
 .subTitulo {
   width: 50%;
-  margin-left: 27%;
+  margin-left: 35%;
   margin-top: 40px;
 }
 .subTitulo h2 {
@@ -248,6 +248,14 @@ header {
   z-index: 3;
 }
 
+.subTituloMenu {
+  margin-top: 40px;
+}
+.subTituloMenu h5 {
+  margin-left: 20%;
+  font-weight: bolder;
+}
+
 .sectionCategorias div {
   width: 50%;
   margin-left: 25%;
@@ -262,18 +270,18 @@ header {
 }
 .sectionCategorias div div ol {
   width: 100%;
-  padding: 0 15% 0 15%;
+  padding: 0 20% 0 20%;
   display: flex;
   justify-content: space-between;
 }
 .sectionCategorias div div ol li {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .sectionCategorias div .subCatDos ol {
-  padding: 0 0 0 15%;
+  padding: 0 0 0 20%;
 }
 .sectionCategorias div .subCatDos ol #textMini {
-  margin-right: 12%;
+  margin-right: 19%;
 }
 
 .containerCategorias {
@@ -316,29 +324,36 @@ header {
 .cardCategorias div div {
   height: 50px;
 }
+.cardCategorias div div a button {
+  border-radius: 5px 0 0 5px;
+}
 .cardCategorias div div button {
   color: black;
   background-color: #e5cfa5;
   border: none;
-  transition: all 0.4s;
-}
-.cardCategorias div div button:hover {
-  background-color: rgb(255, 221, 163);
+  transition: all 0.5s;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 .cardCategorias div div .btnPrimarioCategorias {
-  width: 90%;
+  width: 85%;
 }
 .cardCategorias div div .btnSecundarioCategorias {
-  width: 10%;
+  width: 15%;
 }
 .cardCategorias div div ul {
   background-color: #e5cfa5;
   opacity: 90%;
   width: 200px;
+  padding: 0;
 }
 .cardCategorias div div ul li {
-  text-align: center;
   border-bottom: 1px solid rgb(100, 99, 99);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cardCategorias div div ul li a {
   color: black;
@@ -354,22 +369,15 @@ header {
 }
 .filtrosCategorias h5 {
   margin-left: 20%;
+  font-weight: bolder;
 }
 .filtrosCategorias a {
   margin-right: 20px;
 }
 
-.subTituloMenu h5 {
-  margin-left: 20%;
-}
-
 /* -------------------------------------- */
 /* --------------------------------------------------------- */
 /* ------- AYUDA HTML -----------*/
-.centroAyuda {
-  height: 1800px;
-}
-
 /* --Section "Como comprar y Metodos de Envios"-- */
 .containerAyuda {
   display: grid;
@@ -452,10 +460,6 @@ header {
 
 /************************************************************************************************/
 /* ----------------------------------------- */
-.paginaCarrito {
-  margin-bottom: 20px;
-}
-
 .sectionCarrito {
   display: flex;
   justify-content: center;
@@ -501,7 +505,7 @@ header {
 /* *************************************************************************************************** */
 /* CONTACTO HTML */
 .areaContacto {
-  min-height: 1300px;
+  margin-bottom: 0;
 }
 
 /* Section "Sobre Nosotros" */
@@ -545,6 +549,7 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  padding-right: 3%;
 }
 
 .atencionCliente {
@@ -608,7 +613,7 @@ header {
 }
 .contactoUbicacion iframe {
   grid-area: gps;
-  width: 99%;
+  width: 100%;
 }
 
 /* ---- */
@@ -635,7 +640,7 @@ header {
 .dos {
   background-image: none;
   background-color: #ffffff;
-  opacity: 80%;
+  opacity: 90%;
   border: none;
   height: 90%;
   width: 98%;
@@ -731,12 +736,6 @@ header {
 }
 
 /*********** -- REGISTRO HTML -- ************/
-/* Main Registro */
-.registro {
-  height: auto;
-  margin-bottom: 20px;
-}
-
 /* Section "Registro" */
 .containerRegistro {
   margin-top: 10px;
@@ -780,9 +779,43 @@ header {
   align-items: center;
   margin-top: 10px;
 }
+.camposRegistro p {
+  width: fit-content;
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-left: 50%;
+  color: rgb(31, 31, 230);
+  cursor: pointer;
+}
 .camposRegistro ul {
   display: grid;
   row-gap: 5px;
+}
+.camposRegistro div {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.camposRegistro div p {
+  width: fit-content;
+  margin-left: 7%;
+  font-size: 13px;
+  color: rgb(43, 41, 41);
+  cursor: auto;
+}
+.camposRegistro button {
+  width: 400px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(187, 139, 44);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.camposRegistro button:active {
+  border: 2px solid black;
 }
 
 .camposRellenar input {
@@ -803,32 +836,6 @@ header {
 }
 .camposRellenar textarea:focus {
   border: 5px groove rgb(114, 203, 209);
-}
-
-.camposRegistro div {
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-}
-.camposRegistro div p {
-  width: fit-content;
-  margin-left: 7%;
-  font-size: 13px;
-  color: rgb(43, 41, 41);
-}
-.camposRegistro button {
-  width: 400px;
-  height: 50px;
-  font-size: 20px;
-  background-color: rgb(187, 139, 44);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-.camposRegistro button:active {
-  border: 2px solid black;
 }
 
 /* *************** */
@@ -895,22 +902,6 @@ header {
   bottom: 3px;
 }
 
-/*********** -- INGRESAR HTML -- ************/
-/* Main Ingresar */
-.ingreso {
-  height: auto;
-  margin-bottom: 20px;
-}
-
-/* Link de "Olvidaste tu contraseña?" */
-.camposRegistro a {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 1rem;
-  margin-top: 5px;
-  margin-right: 30px;
-}
-
 /********** Container Separador ************/
 .separador {
   display: flex;
@@ -925,7 +916,7 @@ header {
   height: 1px;
   z-index: 1;
   top: 10px;
-  right: 101px;
+  right: 97px;
 }
 .separador p {
   z-index: 2;
@@ -1022,6 +1013,8 @@ header {
   padding: 5px;
   background-color: rgb(244, 230, 230);
   text-align: center;
+  border: none;
+  box-shadow: 0px 0px 6px 0px rgba(170, 164, 164, 0.75);
 }
 .containerProductos div img {
   height: 60%;
@@ -1031,6 +1024,10 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
+}
+.containerProductos div div {
+  border: none;
+  box-shadow: none;
 }
 
 .textoCards {
@@ -1048,7 +1045,7 @@ header {
   color: black;
 }
 .textoCards h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -1133,7 +1130,7 @@ header {
   }
   .parrafoAyuda {
     background-color: rgb(204, 194, 194);
-    opacity: 70%;
+    opacity: 82%;
     height: 90%;
     width: 96%;
     padding: 2%;
@@ -1156,7 +1153,7 @@ header {
   }
   .parrafoAyudaDos {
     background-color: rgb(204, 194, 194);
-    opacity: 70%;
+    opacity: 82%;
     height: 90%;
     width: 96%;
     padding: 2%;
@@ -1467,6 +1464,15 @@ header {
     margin-top: 0;
     margin-bottom: 0;
   }
+  .cardCategorias {
+    width: 100%;
+  }
+  .cardCategorias div div {
+    width: 30%;
+  }
+  .cardCategorias div div button {
+    font-size: 0.9rem;
+  }
   .containerProductos div {
     height: auto;
   }
@@ -1482,9 +1488,13 @@ header {
   .filtrosCategorias {
     display: flex;
     justify-content: flex-end;
+    margin-top: 40px;
   }
   .filtrosCategorias h5 {
     display: none;
+  }
+  .filtrosCategorias a {
+    font-size: 0.8rem;
   }
   .cartaTres {
     display: none;
@@ -1521,6 +1531,15 @@ header {
   .textoCards p span {
     opacity: 100%;
   }
+  .cardCategorias {
+    width: 100%;
+  }
+  .cardCategorias div div {
+    width: 30%;
+  }
+  .cardCategorias div div button {
+    font-size: 0.7rem;
+  }
 }
 @media (min-width: 501px) and (max-width: 600px) {
   .textoCards h3 {
@@ -1551,6 +1570,13 @@ header {
     text-align: center;
     bottom: 0;
     top: 25px;
+  }
+  .subTituloMenu {
+    text-align: center;
+  }
+  .subTituloMenu h5 {
+    font-size: 1.5rem;
+    margin: 0;
   }
 }
 @media (min-width: 320px) and (max-width: 425px) {
@@ -1634,6 +1660,7 @@ header {
   .sectionCategorias div {
     width: 100%;
     margin: 0;
+    padding: 10px;
   }
   .sectionCategorias div div {
     display: none;
@@ -1671,6 +1698,18 @@ header {
     display: none;
   }
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .containerProductos div {
+    margin-bottom: 5px;
+  }
+  .containerProductos div img {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .containerProductos div div h4 {
+    font-size: 1.5rem;
+  }
+}
 @media (min-width: 426px) and (max-width: 550px) {
   .sectionCategorias div ul li a p {
     max-width: min-content;
@@ -1693,6 +1732,14 @@ header {
   .comentarios div img {
     height: 80px;
     width: 80px;
+  }
+}
+@media (min-width: 380px) and (max-width: 768px) {
+  .cardCategorias div div .btnPrimarioCategorias {
+    width: 70%;
+  }
+  .cardCategorias div div .btnSecundarioCategorias {
+    width: 30%;
   }
 }
 

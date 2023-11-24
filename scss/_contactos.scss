@@ -2,7 +2,8 @@
 /* CONTACTO HTML */
 
 .areaContacto {
-    min-height: 1300px;
+    margin-bottom: 0;
+    
 }
 
 /* Section "Sobre Nosotros" */
@@ -49,6 +50,7 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    padding-right: 3%;
 }
 
 .atencionCliente {
@@ -126,6 +128,6 @@
 
     iframe {
         grid-area: gps;
-        width: 99%;
+        width: 100%;
     }
 }

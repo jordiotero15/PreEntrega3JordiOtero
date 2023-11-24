@@ -1,10 +1,4 @@
 /*********** -- REGISTRO HTML -- ************/
-/* Main Registro */
-
-.registro {
-    height: auto;
-    margin-bottom: 20px;
-}
 
 /* Section "Registro" */
 
@@ -55,9 +49,49 @@
     align-items: center;
     margin-top: 10px;
 
+    p {
+        width: fit-content;
+        font-size: 1rem;
+        margin-top: 5px;
+        margin-left: 50%;
+        color: rgb(31, 31, 230);
+        cursor: pointer;
+
+    }
+
     ul {
         display: grid;
         row-gap: 5px;
+    }
+
+    div {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+
+        p {
+            width: fit-content;
+            margin-left: 7%;
+            font-size: 13px;
+            color: rgb(43, 41, 41);
+            cursor: auto;
+        }
+    }
+
+    button {
+        width: 400px;
+        height: 50px;
+        font-size: 20px;
+        background-color: rgb(187, 139, 44);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        margin-top: 10px;
+        cursor: pointer;
+
+        &:active {
+            border: 2px solid black;
+        }
     }
 }
 
@@ -86,36 +120,6 @@
     }
 }
 
-.camposRegistro {
-    div {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-
-        p {
-            width: fit-content;
-            margin-left: 7%;
-            font-size: 13px;
-            color: rgb(43, 41, 41);
-        }
-    }
-
-    button {
-        width: 400px;
-        height: 50px;
-        font-size: 20px;
-        background-color: rgb(187, 139, 44);
-        color: white;
-        border: none;
-        border-radius: 4px;
-        margin-top: 10px;
-        cursor: pointer;
-
-        &:active {
-            border: 2px solid black;
-        }
-    }
-}
 
 /* *************** */
 /* CheckBox */

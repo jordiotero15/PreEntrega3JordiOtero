@@ -56,7 +56,7 @@
 
 
                     </ul>
-                    <form class="d-flex me-4 containerBuscador" role="search">
+                    <form class="d-flex ms-3 containerBuscador" role="search">
                         <input class="form-control me-0 rounded-5" type="search" placeholder="Buscar"
                             aria-label="Search" title="Buscar">
                         <button class="btnBuscar" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -116,30 +116,30 @@
             </div>
             <div class="carousel-inner carousel-fade containerPromos">
                 <div class="carousel-item active" data-bs-interval="5000">
-                    <a href="#masVend"><img src="../img/tienda/panDulce.jpg" class="d-block w-100" alt="Pan Dulce"></a>
+                    <a href="#masVenDos"><img src="../img/tienda/cafeMedialunas.jpg" class="d-block w-100" alt="Café con Medialunas"></a>
                     <div class="carousel-caption d-md-block textoCards">
-                        <h3>Pan Dulce</h3>
-                        <p><span>$400</span> $350 Tres Pan Dulces</p>
+                        <h3>Café con Medialunas</h3>
+                        <p><span>$180</span> $150</p>
                     </div>
                 </div>
                 <div class="carousel-item " data-bs-interval="4000">
-                    <a href="#masVend"><img src="../img/tienda/milanesaNapolitana.jpeg" class="d-block w-100"
-                            alt="Milanesa Napolitina"></a>
+                    <a href="#masVenDos"><img src="../img/tienda/empanadas.jpg" class="d-block w-100"
+                            alt="Tres Empanadas"></a>
                     <div class="carousel-caption d-md-block textoCards">
-                        <h3>Milanesa Napolitana</h3>
-                        <p><span>$750</span> $620 para dos</p>
+                        <h3>Tres Empanadas</h3>
+                        <p><span>$270</span> $249</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="4000">
+                <div class="carousel-item"  data-bs-interval="4000">
                     <a href="#masVend"><img src="../img/tienda/tortaChocolate.jpg" class="d-block w-100"
                             alt="Postre de Chocolate"></a>
                     <div class="carousel-caption d-md-block textoCards">
                         <h3>Postre de Chocolate</h3>
-                        <p><span>$600</span> $500 la unidad</p>
+                        <p><span>$600</span> $500</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            <button class="carousel-control-prev" id="masVenDos" type="button" data-bs-target="#carouselExampleDark"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -151,7 +151,7 @@
             </button>
         </section>
         <!-- SECTION "SUBTITULO" -->
-        <section class="subTitulo">
+        <section class="subTitulo" >
             <h2> Todas nuestras promociones </h2>
             <div></div>
         </section>
@@ -164,9 +164,11 @@
                         <h4>Categorias</h4>
                         <!-- Bizcochos -->
                         <div class="btn-group dropend">
-                            <button type="button" class="btn btn-secondary btnPrimarioCategorias">
-                                Bizcochos
-                            </button>
+                            <a href="tienda.html#dulces" class="btnPrimarioCategorias" >
+                                <button type="button" class="btn btn-secondary ">
+                                    Bizcochos
+                                </button>
+                            </a>
                             <button type="button"
                                 class="btn btn-secondary dropdown-toggle dropdown-toggle-split btnSecundarioCategorias"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -176,56 +178,62 @@
                                 <li><a href="tienda.html#dulces" title="Bizcochos Dulces">Dulces</a></li>
                                 <li><a href="tienda.html#salados" title="Bizcochos Salados">Salados</a></li>
                                 <li><a href="tienda.html#panes" title="Panes">Panes</a></li>
-                                <li class="border-bottom-0" title="Galleteria"><a href="tienda.html#galleteria">Galleteria</a></li>
+                                <li class="border-bottom-0" title="Galleteria"><a href="tienda.html#galleteria">Galletería</a></li>
                             </ul>
                         </div>
 
                         <!-- Confiteria -->
                         <div class="btn-group dropend">
-                            <button type="button" class="btn btn-secondary btnPrimarioCategorias">
-                                Confitería
-                            </button>
+                            <a href="tienda.html#masas" class="btnPrimarioCategorias">
+                                <button type="button" class="btn btn-secondary ">
+                                    Confitería
+                                </button>
+                            </a>
                             <button type="button"
                                 class="btn btn-secondary dropdown-toggle dropdown-toggle-split btnSecundarioCategorias"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="visually-hidden">Toggle Dropend</span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a href="tienda.html#masas">Masas</a></li>
-                                <li><a href="tienda.html#postres">Postres</a></li>
-                                <li class="border-bottom-0"><a href="tienda.html#alfajores">Alfajores y Ojitos</a></li>
+                                <li><a href="tienda.html#masas" title="Masas">Masas</a></li>
+                                <li><a href="tienda.html#postres" title="Postres">Postres</a></li>
+                                <li class="border-bottom-0"><a href="tienda.html#alfajores"  title="Alfajores y Ojitos">Alfajores y Ojitos</a></li>
                             </ul>
                         </div>
 
                         <!-- Rotiseria -->
                         <div class="btn-group dropend">
-                            <button type="button" class="btn btn-secondary btnPrimarioCategorias">
-                                Rotisería
-                            </button>
+                            <a href="tienda.html#rotiseria" class="btnPrimarioCategorias">
+                                <button type="button" class="btn btn-secondary ">
+                                    Rotisería
+                                </button>
+                            </a>
                             <button type="button"
                                 class="btn btn-secondary dropdown-toggle dropdown-toggle-split btnSecundarioCategorias"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="visually-hidden">Toggle Dropend</span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li class="border-bottom-0"><a href="tienda.html#rotiseria"> Rotisería </a></li>
+                                <li class="border-bottom-0"><a href="tienda.html#rotiseria" title="Rotisería"> Rotisería </a></li>
                             </ul>
                         </div>
                         <!-- Mini-market -->
                         <div class="btn-group dropend">
-                            <button type="button" class="btn btn-secondary btnPrimarioCategorias">
-                                Mini-Market
-                            </button>
+                            <a href="tienda.html#bebidas" class="btnPrimarioCategorias">
+                                <button type="button" class="btn btn-secondary ">
+                                    Mini-Market
+                                </button>
+                            </a>
                             <button type="button"
                                 class="btn btn-secondary dropdown-toggle dropdown-toggle-split btnSecundarioCategorias"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="visually-hidden">Toggle Dropend</span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a href="tienda.html#bebidas">Aguas y Bebidas</a></li>
-                                <li><a href="tienda.html#lacteos">Lacteos y Quesos</a></li>
-                                <li><a href="tienda.html#golosinas">Golosinas y Chocolates</a></li>
-                                <li class="border-bottom-0"><a href="tienda.html#snacks">Snacks</a></li>
+                                <li><a href="tienda.html#bebidas" title="Aguas y Bebidas">Aguas y Bebidas</a></li>
+                                <li><a href="tienda.html#lacteos" title="Lacteos y Quesos">Lacteos y Quesos</a></li>
+                                <li><a href="tienda.html#golosinas" title="Golosinas y Chocolates">Golosinas y Chocolates</a></li>
+                                <li class="border-bottom-0"><a href="tienda.html#snacks" title="Snacks">Snacks</a></li>
                             </ul>
                         </div>
 
@@ -240,7 +248,7 @@
                                 <span class="visually-hidden">Toggle Dropend</span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li class="border-bottom-0"><a href="#">Promociones</a></li>
+                                <li class="border-bottom-0"><a href="#" title="Promociones">Promociones</a></li>
                             </ul>
                         </div>
                     </div>
@@ -249,8 +257,8 @@
                 <div class="card col-xl-2 col-md-6 col-sm-12 ">
                     <img src="../img/tienda/bizcochosSurtidos.jpg" class="card-img-top" alt="Bizcochos Surtidos">
                     <div class=" textoCards">
-                        <h4 class="card-title">Bizcochos Surtidos</h4>
-                        <p><span>$550</span> $490 el kg.</p>
+                        <h4 class="card-title">Bizcochos Surtidos - 1 kg</h4>
+                        <p><span>$550</span> $490</p>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
@@ -264,7 +272,7 @@
                         alt="Budín de Vainilla con Glacé de Limón">
                     <div class="card-body textoCards">
                         <h4 class="card-title" id="masVend">Budín de Vainilla </h4>
-                        <p><span>$299</span> $229 c/unidad.</p>
+                        <p><span>$299</span> $229</p>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
@@ -276,7 +284,7 @@
                 <div class="card col-xl-2 col-md-6 col-sm-12 ">
                     <img src="../img/tienda/cafeMedialunas.jpg" class="card-img-top" alt="Café con dos Medialunas">
                     <div class="card-body textoCards">
-                        <h4 class="card-title">Café con 2 Medialunas</h4>
+                        <h4 class="card-title">Café con Medialunas</h4>
                         <p><span>$180</span> $150 </p>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -288,8 +296,8 @@
                 <div class="card col-xl-2 col-md-6 col-sm-12 ">
                     <img src="../img/tienda/empanadas.jpg" class="card-img-top" alt="Empanadas">
                     <div class="card-body textoCards">
-                        <h4 class="card-title">Empanadas</h4>
-                        <p><span>$270</span> $249 Tres Empanadas a elección.</p>
+                        <h4 class="card-title">Tres Empanadas</h4>
+                        <p><span>$270</span> $249</p>
 
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -308,7 +316,7 @@
                     <img src="../img/tienda/panDulce.jpg" class="card-img-top" alt="Pan Dulce">
                     <div class="card-body textoCards">
                         <h4 class="card-title">Pan Dulce</h4>
-                        <p><span>$400</span> $350 Pan Dulces con frutos secos</p>
+                        <p><span>$400</span> $350</p>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
@@ -321,7 +329,7 @@
                     <img src="../img/tienda/milanesaNapolitana.jpeg" class="card-img-top" alt="Milanesa Napolitana">
                     <div class="card-body textoCards">
                         <h4 class="card-title">Milanesa Napolitana</h4>
-                        <p><span>$750</span> $620 para dos</p>
+                        <p><span>$750</span> $620</p>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
@@ -334,7 +342,7 @@
                     <img src="../img/tienda/tortaChocolate.jpg" class="card-img-top" alt="Postre de Chocolate">
                     <div class="card-body textoCards">
                         <h4 class="card-title">Postre de Chocolate</h4>
-                        <p><span>$600</span> $500 la unidad</p>
+                        <p><span>$600</span> $500</p>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
@@ -344,10 +352,10 @@
                 </div>
 
                 <div class="card col-xl-3 col-md-6 col-sm-12 cartaCuatro">
-                    <img src="../img/tienda/maicena.jpg" class="card-img-top" alt="Milanesa Napolitana">
+                    <img src="../img/tienda/alfajorMaicena.jpeg" class="card-img-top" alt="Alfajores de Maicena">
                     <div class="card-body textoCards">
-                        <h4 class="card-title">Alfajores de maicena</h4>
-                        <p><span>$190</span> $160 bandeja de 6 unidades</p>
+                        <h4 class="card-title">Alfajor de Maicena - 1 kg</h4>
+                        <p><span>$990</span> $890</p>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
