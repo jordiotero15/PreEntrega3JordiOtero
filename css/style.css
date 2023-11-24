@@ -1300,7 +1300,7 @@ header {
 }
 /*/* ******************************************* */
 /* MEDIA QUERIES CONTACTO HTML */
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 810px) {
   /* Titulo */
   .sectionTitulo h1 {
     font-size: 3rem;
